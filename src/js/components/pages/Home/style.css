@@ -1,0 +1,12 @@
+@import "shared/colors.css";
+@import "shared/typography.css";
+
+.home-page {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  color: var(--color-white);
+  text-align: center;
+  font-family: var(--font-heebo-md);
+  background-color: var(--color-black);
+}
