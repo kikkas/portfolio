@@ -3,10 +3,12 @@
 
 .home-page {
   display: flex;
-  flex: 1;
-  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  max-width: 1020px;
   color: var(--color-white);
+  padding-top: 306px;
   text-align: center;
-  font-family: var(--font-heebo-md);
-  background-color: var(--color-black);
+  position: relative;
 }

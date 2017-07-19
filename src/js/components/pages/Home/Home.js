@@ -4,15 +4,15 @@
  *
  */
 
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import Helmet from "react-helmet";
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import Helmet from "react-helmet"
 
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import Navbar from 'components/orgainisms/Navbar'
+import Footer from 'components/orgainisms/Footer'
+import Content from 'components/orgainisms/Content'
 
-import './style.css';
+import './style.css'
 
 
 @connect(
@@ -23,16 +23,23 @@ import './style.css';
   })
 )
 export default class Home extends Component {
-  static contextTypes = {
-    intl: PropTypes.object.isRequired
-  };
-
   render() {
     return (
       <div className="home-page">
         <Helmet title={'Martin Kikkas'} />
-        <FormattedMessage {...messages.header} />
+
+        <Navbar />
+
+        <Content>
+          <div>
+            Content
+          </div>
+          <div>
+            More content
+          </div>
+        </Content>
+
       </div>
-    );
+    )
   }
 }
