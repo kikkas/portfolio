@@ -4,15 +4,15 @@
  *
  */
 
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import Helmet from "react-helmet";
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import Helmet from "react-helmet"
 
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import { FormattedMessage } from 'react-intl'
+import messages from './messages'
 
-import './style.css';
+import './style.css'
 
 
 @connect(
@@ -25,7 +25,7 @@ import './style.css';
 export default class About extends Component {
   static contextTypes = {
     intl: PropTypes.object.isRequired
-  };
+  }
 
   render() {
     return (
@@ -33,6 +33,6 @@ export default class About extends Component {
         <Helmet title={`Martin Kikkas | ${this.context.intl.formatMessage(messages.header)}`} />
         <FormattedMessage {...messages.header} />
       </div>
-    );
+    )
   }
 }
