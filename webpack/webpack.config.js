@@ -1,15 +1,15 @@
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
+var path = require('path')
+var webpack = require('webpack')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin')
 
-var NODE_ENV = process.env.NODE_ENV || 'development';
+var NODE_ENV = process.env.NODE_ENV || 'development'
 
-var configFilePath = path.join(process.cwd(), 'config', NODE_ENV + '.config.js');
-var config = require(configFilePath);
+var configFilePath = path.join(process.cwd(), 'config', NODE_ENV + '.config.js')
+var config = require(configFilePath)
 
-var DEBUG = process.env.NODE_ENV !== 'production';
+var DEBUG = process.env.NODE_ENV !== 'production'
 
 
 module.exports = {
@@ -216,4 +216,4 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
   },
-};
+}

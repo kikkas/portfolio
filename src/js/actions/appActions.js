@@ -7,7 +7,7 @@
 import {
   APP__INIT,
   APP__CHANGE_LOCALE,
-} from 'constants/ActionTypes';
+} from 'constants/ActionTypes'
 
 
 export const init = (data) => ({
@@ -15,11 +15,11 @@ export const init = (data) => ({
   payload: {
     ...data,
   },
-});
+})
 
 export const changeLocale = (locale) => ({
   type: APP__CHANGE_LOCALE,
   payload: {
     locale,
   },
-});
+})

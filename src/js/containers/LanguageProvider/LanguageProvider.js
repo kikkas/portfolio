@@ -6,10 +6,10 @@
  * IntlProvider component and i18n messages (loaded from `js/translations`)
  */
 
-import React, { Component, Children } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { IntlProvider } from 'react-intl';
+import React, { Component, Children } from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { IntlProvider } from 'react-intl'
 
 
 @connect(
@@ -22,15 +22,15 @@ export default class LanguageProvider extends Component {
     locale: PropTypes.string,
     messages: PropTypes.object,
     children: PropTypes.element.isRequired,
-  };
+  }
 
   render() {
-    const { messages, children, locale } = this.props;
+    const { messages, children, locale } = this.props
 
     return (
       <IntlProvider locale={locale} messages={messages[locale]}>
         {Children.only(children)}
       </IntlProvider>
-    );
+    )
   }
 }
