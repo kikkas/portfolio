@@ -2,18 +2,18 @@
 @import "shared/typography.css";
 
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: calc(100vw - 8px);
+  margin-left: calc((100vw - 1020px) / -2);
   height: 306px;
   display: flex;
   justify-content: center;
+  z-index: 2;
 
   &--opened {
     background-color: var(--color-white);
     color: var(--color-main);
     height: 535px;
+    margin-bottom: -229px;
   }
 
   &--closed {
@@ -49,8 +49,7 @@
   &__logo {
     display: flex;
     align-self: flex-start;
-    font-family: var(--font-heebo);
-    font-weight: 700;
+    font-family: var(--font-heebo-bd);
     height: 35px;
     align-items: center;
   }
@@ -82,7 +81,7 @@
   }
 
   &__column-link {
-    font-family: Heebo-Light;
+    font-family: var(--font-heebo-lt);
     font-size: 17px;
     color: var(--color-black);
     letter-spacing: 0;
