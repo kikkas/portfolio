@@ -39,16 +39,21 @@ export default class Home extends Component {
       <div className="home-page">
         <Helmet title={'Martin Kikkas'} />
 
-        <Navbar />
+        <div className="home-page__container">
 
-        <Content>
-          <TopPanel />
-          <Projects projects={this.props.projects} />
-          <ServiceList />
-          <Articles />
-        </Content>
+          <Navbar />
 
-        <Footer />
+          <Content>
+            <TopPanel />
+            <Projects projects={this.props.projects} />
+            <ServiceList />
+            <Articles />
+          </Content>
+
+          <Footer />
+
+        </div>
+
       </div>
     )
   }
