@@ -20,6 +20,11 @@
     background-color: var(--color-main);
     color: var(--color-white);
 
+    &.navbar--light {
+      background-color: var(--color-white);
+      color: var(--color-main);
+    }
+
     & .navbar__body {
       display: none;
     }
