@@ -5,14 +5,20 @@
  */
 
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import menu_closed_icon from 'assets/svg/menu-closed.svg'
+import menu_closed_dark_icon from 'assets/svg/menu-closed-dark.svg'
 import menu_opened_icon from 'assets/svg/menu-opened.svg'
 
 import './style.css'
 
 
 export default class Navbar extends React.Component {
+  static propTypes = {
+    light: PropTypes.bool,
+  }
+
   constructor() {
     super()
 
@@ -64,11 +70,14 @@ export default class Navbar extends React.Component {
 
   render() {
     const { closed } = this.state
+    const { light } = this.props
 
     return (
       <div
         className={`navbar ${
           closed ? 'navbar--closed' : 'navbar--opened'
+        } ${
+          light ? 'navbar--light' : ''
         }`}
       >
         <div className="navbar__content">
@@ -80,7 +89,9 @@ export default class Navbar extends React.Component {
               closed ?
                 <div
                   className="navbar__menu-button"
-                  dangerouslySetInnerHTML={{__html: menu_closed_icon}}
+                  dangerouslySetInnerHTML={{
+                    __html: light ? menu_closed_dark_icon : menu_closed_icon
+                  }}
                   onClick={this.toggle}
                 /> :
                 <div
