@@ -1,0 +1,26 @@
+@import "shared/colors.css";
+@import "shared/typography.css";
+
+
+.service-list {
+  margin-bottom: 160px;
+
+  &__title {
+    width: 174px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-sfns);
+    font-size: 35px;
+    color: var(--color-white);
+    letter-spacing: 0.62px;
+    text-align: left;
+    margin-bottom: 56px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
