@@ -25,14 +25,11 @@
 
   &__item {
     display: flex;
+    align-items: center;
+    width: 480px;
 
     &:not(:nth-child(-n+2)) {
       margin-top: 46px;
-    }
-
-    & img {
-      width: 480px;
-      height: 352px;
     }
   }
 }

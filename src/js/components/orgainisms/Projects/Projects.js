@@ -9,6 +9,8 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import map from 'lodash/map'
 
+import AnimatedImage from 'components/atoms/AnimatedImage'
+
 import './style.css'
 
 
@@ -29,7 +31,7 @@ export default class Projects extends React.Component {
                 key={project.id}
                 to={`/${project.slug}`}
               >
-                <img src={project.image} />
+                <AnimatedImage src={project.image} />
               </Link>
             )
           }
