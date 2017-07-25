@@ -11,9 +11,6 @@ import {
 import createHistory from 'history/createBrowserHistory'
 import { ConnectedRouter, routerMiddleware } from 'react-router-redux'
 
-import LanguageProvider from 'containers/LanguageProvider'
-import { translationMessages } from './i18n'
-
 import 'css/main.css'
 
 import App from 'containers/App'
@@ -43,31 +40,14 @@ if (module.hot) {
   })
 }
 
-const render = (translatedMessages) => {
-  ReactDOM.render(
-    <Provider store={store}>
-      <LanguageProvider messages={translatedMessages}>
-        <ConnectedRouter history={history}>
-          <App>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-          </App>
-        </ConnectedRouter>
-      </LanguageProvider>
-    </Provider>,
-    document.getElementById('app')
-  )
-}
-
-// Chunked polyfill for browsers without Intl support
-if (!window.Intl) {
-  let script = document.createElement('script')
-  script.type = 'text/javascript'
-  script.charset = 'utf-8'
-  script.async = true
-  script.src = 'https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en,Intl.~locale.se'
-  script.onload = () => render(translationMessages)
-  document.getElementsByTagName('head')[0].appendChild(script)
-} else {
-  render(translationMessages)
-}
+ReactDOM.render(
+  <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <App>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+        </App>
+      </ConnectedRouter>
+  </Provider>,
+  document.getElementById('app')
+)
