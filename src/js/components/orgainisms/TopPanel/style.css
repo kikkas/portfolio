@@ -3,10 +3,32 @@
 
 
 .top-panel {
-  height: 480px;
-  width: 100%;
   display: flex;
-  margin-bottom: 160px;
+  flex: 1;
+
+  &__wrapper {
+    height: 480px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 160px;
+  }
+
+  &__animation-desk {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__animation-desk-text {
+    padding: 50px 0 50px 0;
+    overflow: hidden;
+    font-family: var(--font-sfns);
+    font-size: 48px;
+    color: var(--color-white);
+    letter-spacing: 0.76px;
+    text-shadow: 0 0 14px var(--color-black);
+  }
 
   &__name {
     text-transform: uppercase;
@@ -71,12 +93,5 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  &__img {
-    width: 520px;
-    height: 480px;
-    height: 110%;
-    /* margin-top: -5%; */
   }
 }
