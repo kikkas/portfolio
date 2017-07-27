@@ -24,10 +24,16 @@ export default class ServiceListItem extends React.Component {
       <div className="service-list-item">
         <div className="service-list-item__icon">{icon}</div>
         <div className="service-list-item__title">{title}</div>
-        <div
-          className="service-list-item__description"
-          dangerouslySetInnerHTML={{__html: description.replace(/\r?\n|\r/g, '<br />')}}
-        />
+        {
+          window.innerWidth > 767 ?
+            <div
+              className="service-list-item__description"
+              dangerouslySetInnerHTML={{__html: description.replace(/\r?\n|\r/g, '<br />')}}
+            /> :
+            <div className="service-list-item__description">
+              {description}
+            </div>
+        }
       </div>
     )
   }

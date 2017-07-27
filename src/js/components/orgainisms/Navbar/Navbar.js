@@ -104,19 +104,31 @@ export default class Navbar extends React.Component {
           </div>
           <div className="navbar__body">
 
-            <div className="navbar__column">
-              <div className="navbar__column-title">About me</div>
-              <div className="navbar__column-link">LinkedIn</div>
-              <div className="navbar__column-link">Medium</div>
-              <div className="navbar__column-link">Dribbble</div>
-            </div>
+            {
+              window.innerWidth > 767 ?
+                <div className="navbar__column">
+                  <div className="navbar__column-title">About me</div>
+                  <div className="navbar__column-link">LinkedIn</div>
+                  <div className="navbar__column-link">Medium</div>
+                  <div className="navbar__column-link">Dribbble</div>
+                </div> :
+                <div className="navbar__column">
+                  <div className="navbar__column-title">Projects</div>
+                </div>
+            }
 
-            <div className="navbar__column">
-              <div className="navbar__column-title">Projects</div>
-              <div className="navbar__column-link">#1 Autonomous car</div>
-              <div className="navbar__column-link">#2 Health dashboard</div>
-              <div className="navbar__column-link">#3 Flight app</div>
-            </div>
+            {
+              window.innerWidth > 767 ?
+                <div className="navbar__column">
+                  <div className="navbar__column-title">Projects</div>
+                  <div className="navbar__column-link">#1 Autonomous car</div>
+                  <div className="navbar__column-link">#2 Health dashboard</div>
+                  <div className="navbar__column-link">#3 Flight app</div>
+                </div> :
+                <div className="navbar__column">
+                  <div className="navbar__column-title">About me</div>
+                </div>
+            }
 
             <div className="navbar__column">
               <div className="navbar__column-title">Behind my mind</div>
@@ -124,6 +136,13 @@ export default class Navbar extends React.Component {
               <div className="navbar__column-link">What does the LIDAR mean?</div>
             </div>
 
+            {
+              window.innerWidth < 768 ?
+                <div className="navbar__column">
+                  <div className="navbar__column-title">Shots at Dribbble</div>
+                </div>:
+                null
+            }
           </div>
         </div>
       </div>

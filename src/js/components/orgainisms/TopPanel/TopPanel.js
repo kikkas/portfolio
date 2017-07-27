@@ -21,7 +21,7 @@ import './style.css'
 
 export default class TopPanel extends React.Component {
   state = {
-    initialized: false,
+    initialized: true,
   }
 
   componentDidMount() {
@@ -67,13 +67,13 @@ export default class TopPanel extends React.Component {
 
   render() {
     return (
-      <div className="top-panel__wrapper">
+      <div className="top-panel">
         {
           !this.state.initialized ?
             <div className="top-panel__animation-desk">
               <div className="top-panel__animation-desk-text">Magic is happening</div>
             </div> :
-            <div className="top-panel">
+            <div className="top-panel__content">
               <div className="top-panel__column">
                 <div className="top-panel__name">Martin Kikkas</div>
                 <div className="top-panel__bio">Product designer</div>

@@ -5,6 +5,10 @@
 .service-list {
   margin-bottom: 160px;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 75px;
+  }
+
   &__title {
     width: 174px;
     height: 52px;
@@ -16,6 +20,13 @@
     letter-spacing: 0.62px;
     text-align: left;
     margin-bottom: 56px;
+
+    @media (max-width: 767px) {
+      height: 41px;
+      font-size: 35px;
+      letter-spacing: 0.62px;
+      margin-bottom: 70px;
+    }
   }
 
   &__list {

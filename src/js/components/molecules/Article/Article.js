@@ -27,7 +27,11 @@ export default class Article extends React.Component {
       <div className="article">
         <Link to={link} className="article__body">
           <div className="article__title">{title}</div>
-          <ArticleTypeIndicator type={type} />
+          {
+            window.innerWidth > 767 ?
+              <ArticleTypeIndicator type={type} /> :
+              null
+          }
         </Link>
 
         <div className="article__author">Published by Kickass</div>
