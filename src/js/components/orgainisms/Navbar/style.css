@@ -1,12 +1,15 @@
-@import "shared/colors.css";
-@import "shared/typography.css";
+@import 'shared/colors.css';
+@import 'shared/typography.css';
 
 .navbar {
   width: 100vw;
   height: 306px;
   display: flex;
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   margin-left: calc((100% - 100vw) / 2);
 
@@ -36,6 +39,7 @@
   &--closed {
     background-color: transparent;
     color: var(--color-white);
+    height: 0;
 
     &.navbar--light {
       background-color: var(--color-white);
@@ -63,7 +67,6 @@
 
     @media (max-width: 767px) {
       padding: 19px 25px 0;
-
     }
   }
 

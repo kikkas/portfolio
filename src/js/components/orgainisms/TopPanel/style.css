@@ -1,11 +1,12 @@
 @import "shared/colors.css";
 @import "shared/typography.css";
 
-
 .top-panel {
   height: 100vh;
   width: 100%;
   display: flex;
+  max-width: 1020px;
+  z-index: 1;
 
   @media (max-width: 767px) {
     height: auto;

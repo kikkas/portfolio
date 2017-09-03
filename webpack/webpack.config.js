@@ -11,20 +11,18 @@ var config = require(configFilePath)
 
 var DEBUG = process.env.NODE_ENV !== 'production'
 
-
 module.exports = {
   devtool: DEBUG ? 'eval' : false,
 
   cache: DEBUG,
 
-  entry: DEBUG ? [
-    'webpack-hot-middleware/client',
-    'babel-polyfill',
-    path.join(__dirname, '..', 'src', 'js', 'app.js'),
-  ] : [
-    'babel-polyfill',
-    path.join(__dirname, '..', 'src', 'js', 'app.js'),
-  ],
+  entry: DEBUG
+    ? [
+        'webpack-hot-middleware/client',
+        'babel-polyfill',
+        path.join(__dirname, '..', 'src', 'js', 'app.js'),
+      ]
+    : ['babel-polyfill', path.join(__dirname, '..', 'src', 'js', 'app.js')],
 
   output: {
     path: path.join(__dirname, '..', 'build'),
@@ -34,7 +32,6 @@ module.exports = {
 
   module: {
     rules: [
-
       {
         enforce: 'pre',
         test: /\.jsx?$/,
@@ -61,63 +58,69 @@ module.exports = {
 
       {
         test: /\.s?css$/,
-        loader: DEBUG ? [
-          'style-loader',
-          'css-loader',
-          'postcss-loader',
-        ] : ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              query: {
-                minimize: 1,
-              },
-            },
-            'postcss-loader',
-          ],
-        }),
+        loader: DEBUG
+          ? ['style-loader', 'css-loader', 'postcss-loader']
+          : ExtractTextPlugin.extract({
+              fallback: 'style-loader',
+              use: [
+                {
+                  loader: 'css-loader',
+                  query: {
+                    minimize: 1,
+                  },
+                },
+                'postcss-loader',
+              ],
+            }),
       },
 
       {
         test: /\.(jpe?g|gif|png)$/i,
-        use: [{
-          loader: 'url-loader',
-          options: {
-            limit: 10000,
-            name: 'img/[name].[ext]',
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              name: 'img/[name].[ext]',
+            },
           },
-        }],
+        ],
       },
 
       {
         test: /(\.(otf|eot|ttf|woff(2)?)(\?[a-z0-9=&#.]+)?)|(.+\/fonts\/.+\.svg)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: 'fonts/[name].[ext]',
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'fonts/[name].[ext]',
+            },
           },
-        }],
+        ],
       },
 
       {
         test: /\.ogg$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: 'audio/[name].[ext]',
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'audio/[name].[ext]',
+            },
           },
-        }],
+        ],
       },
 
       {
         test: /\.json$/,
-        use: [{
-          loader: 'json-loader',
-          options: {
-            name: 'json/[name].[ext]',
+        use: [
+          {
+            loader: 'json-loader',
+            options: {
+              name: 'json/[name].[ext]',
+            },
           },
-        }],
+        ],
       },
 
       {
@@ -131,24 +134,28 @@ module.exports = {
 
       {
         test: /img\/.+\.svg$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: 'img/[name].[ext]',
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'img/[name].[ext]',
+            },
           },
-        }],
+        ],
       },
 
       {
-        test: /video\/.+\.mov$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: 'video/[name].[ext]',
+        test: /video\/.+\.(mov|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'video/[name].[ext]',
+            },
           },
-        }],
+        ],
       },
-    ]
+    ],
   },
 
   resolve: {
@@ -158,11 +165,9 @@ module.exports = {
       'node_modules',
     ],
     alias: {
-      'assets': path.join(__dirname, '..', 'assets'),
+      assets: path.join(__dirname, '..', 'assets'),
     },
-    plugins: [
-      new DirectoryNamedWebpackPlugin(true),
-    ],
+    plugins: [new DirectoryNamedWebpackPlugin(true)],
   },
 
   plugins: [
@@ -176,42 +181,49 @@ module.exports = {
       },
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
-  ].concat(DEBUG ? [
-      new webpack.HotModuleReplacementPlugin(),
-      new webpack.NamedModulesPlugin(),
-      new HtmlWebpackPlugin({
-        template: 'index.ejs',
-        environment: 'development',
-        favicon: path.join(__dirname, '..', 'assets', 'img', 'favicon.png'),
-      }),
-    ] : [
-      new ExtractTextPlugin({ filename: 'css/main.css' }),
-      new webpack.NoEmitOnErrorsPlugin(),
-      new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          warnings: false
-        },
-        comments: false,
-      }),
-      new HtmlWebpackPlugin({
-        template: 'index.ejs',
-        minify: {
-          removeComments: true,
-          collapseWhitespace: true,
-          removeRedundantAttributes: true,
-          useShortDoctype: true,
-          removeEmptyAttributes: true,
-          removeStyleLinkTypeAttributes: true,
-          keepClosingSlash: true,
-          minifyJS: true,
-          minifyCSS: true,
-          minifyURLs: true
-        },
-        environment: 'production',
-        favicon: path.join(__dirname, '..', 'assets', 'img', 'favicon.png'),
-      }),
-      new webpack.ContextReplacementPlugin(/node_modules\/moment\/locale/, /en-gb.js$/),
-  ]),
+  ].concat(
+    DEBUG
+      ? [
+          new webpack.HotModuleReplacementPlugin(),
+          new webpack.NamedModulesPlugin(),
+          new HtmlWebpackPlugin({
+            template: 'index.ejs',
+            environment: 'development',
+            favicon: path.join(__dirname, '..', 'assets', 'img', 'favicon.png'),
+          }),
+        ]
+      : [
+          new ExtractTextPlugin({ filename: 'css/main.css' }),
+          new webpack.NoEmitOnErrorsPlugin(),
+          new webpack.optimize.UglifyJsPlugin({
+            compress: {
+              warnings: false,
+            },
+            comments: false,
+          }),
+          new HtmlWebpackPlugin({
+            template: 'index.ejs',
+            minify: {
+              removeComments: true,
+              collapseWhitespace: true,
+              removeRedundantAttributes: true,
+              useShortDoctype: true,
+              removeEmptyAttributes: true,
+              removeStyleLinkTypeAttributes: true,
+              keepClosingSlash: true,
+              minifyJS: true,
+              minifyCSS: true,
+              minifyURLs: true,
+            },
+            environment: 'production',
+            favicon: path.join(__dirname, '..', 'assets', 'img', 'favicon.png'),
+          }),
+          new webpack.ContextReplacementPlugin(
+            /node_modules\/moment\/locale/,
+            /en-gb.js$/
+          ),
+        ]
+  ),
 
   target: 'web',
 

@@ -1,9 +1,11 @@
 @import "shared/colors.css";
 @import "shared/typography.css";
 
-
 .service-list {
   margin-bottom: 160px;
+  /* display: flex; */
+  width: 100%;
+  max-width: 1020px;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 75px;

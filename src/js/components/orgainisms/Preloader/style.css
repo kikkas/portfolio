@@ -1,0 +1,26 @@
+@import 'shared/colors.css';
+@import 'shared/typography.css';
+
+.preloader {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: var(--color-main);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__text {
+    padding: 50px 0 50px 0;
+    overflow: hidden;
+    font-family: var(--font-sfns);
+    font-size: 48px;
+    color: var(--color-white);
+    letter-spacing: 0.76px;
+    text-shadow: 0 0 14px var(--color-black);
+  }
+}

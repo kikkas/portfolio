@@ -1,10 +1,12 @@
 @import "shared/colors.css";
 @import "shared/typography.css";
 
-
 .projects {
   margin-bottom: 160px;
   margin-top: 160px;
+  width: 100%;
+  /* display: flex; */
+  max-width: 1020px;
 
   @media (max-width: 767px) {
     margin-top: 66px;
@@ -41,7 +43,7 @@
     align-items: center;
     width: 480px;
 
-    &:not(:nth-child(-n+2)) {
+    &:not(:nth-child(-n + 2)) {
       @media (min-width: 767px) {
         margin-top: 46px;
       }
