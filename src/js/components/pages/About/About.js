@@ -11,6 +11,8 @@ import Helmet from "react-helmet"
 import Navbar from 'components/orgainisms/Navbar'
 import Footer from 'components/orgainisms/Footer'
 import Content from 'components/orgainisms/Content'
+import AboutMe from 'components/orgainisms/AboutMe'
+
 
 import './style.css'
 
@@ -32,7 +34,9 @@ export default class About extends Component {
 
           <Navbar light />
 
-          <Content></Content>
+          <Content>
+            <AboutMe />
+          </Content>
 
           <Footer light />
         </div>
