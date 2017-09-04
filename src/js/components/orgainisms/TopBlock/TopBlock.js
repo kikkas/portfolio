@@ -14,7 +14,13 @@ import easeInQuart from 'eases/quart-in'
 import easeInQuint from 'eases/quint-in'
 import easeInOutSine from 'eases/sine-in-out'
 
-import videoUrl from 'assets/video/2.mp4'
+import videoUrl_1 from 'assets/video/1.mp4'
+import videoUrl_2 from 'assets/video/2.mp4'
+import videoUrl_3 from 'assets/video/3.mp4'
+
+const videos = [videoUrl_1, videoUrl_2, videoUrl_3]
+
+import { random } from 'lodash'
 
 import './style.css'
 
@@ -25,6 +31,12 @@ export default class TopBlock extends React.Component {
 
   state = {
     animationIsFinished: false,
+  }
+
+  constructor(props) {
+    super(props)
+
+    this.videoUrl = videos[random(0, 2)]
   }
 
   componentDidMount() {
@@ -185,7 +197,7 @@ export default class TopBlock extends React.Component {
             ref={ref => (this._videoBlock = ref)}
           >
             <video
-              src={videoUrl}
+              src={this.videoUrl}
               onDurationChange={this._onDurationChange}
               onPlay={this._onVideoPlay}
               ref={ref => (this._video = ref)}
