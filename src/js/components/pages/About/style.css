@@ -19,5 +19,9 @@
     font-family: var(--font-heebo-md);
     text-align: center;
     color: var(--color-black);
+
+    @media (max-width: 767px) {
+      padding: 0 25px;
+    }
   }
 }

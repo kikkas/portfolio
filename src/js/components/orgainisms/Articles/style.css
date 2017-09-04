@@ -1,13 +1,17 @@
 @import "shared/colors.css";
 @import "shared/typography.css";
 
-
 .articles {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 171px;
+  width: 100%;
+  max-width: 1020px;
 
+  @media (max-width: 767px) {
+    margin-bottom: 108px;
+  }
   &__title {
     height: 41px;
     display: flex;
@@ -18,6 +22,11 @@
     letter-spacing: 0.62px;
     text-align: left;
     margin-bottom: 72px;
+
+    @media (max-width: 767px) {
+      height: 52px;
+      margin-bottom: 21px;
+    }
   }
 
   &__list {

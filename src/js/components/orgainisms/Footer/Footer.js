@@ -25,8 +25,13 @@ export default class Footer extends React.Component {
         }`}
       >
         <div className="footer__content">
+
           <div className="footer__col">
-            Martin Kikkas
+            {
+              window.innerWidth > 767 ?
+                <span>Martin Kikkas</span> :
+                <span>kikkas.</span>
+            }
           </div>
           <div className="footer__col">
             Email me
@@ -37,9 +42,13 @@ export default class Footer extends React.Component {
           <div className="footer__col">
             Dribbble
           </div>
-          <div className="footer__col">
-            LinkedIn
-          </div>
+          {
+              window.innerWidth > 767 ?
+                <div className="footer__col">
+                  LinkedIn
+                </div> :
+                null
+          }
         </div>
       </div>
     )
