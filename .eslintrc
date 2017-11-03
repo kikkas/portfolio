@@ -10,7 +10,8 @@
     }
   },
   "plugins": [
-    "react"
+    "react",
+    "compat"
   ],
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "env": {
@@ -23,6 +24,7 @@
     "react/prop-types": 1,
     "react/react-in-jsx-scope": 0,
     "no-unused-vars": ["warn", { "varsIgnorePattern": "h" }],
-    "no-extra-semi": 1
+    "no-extra-semi": 1,
+    "compat/compat": "error"
   }
 }
