@@ -4,17 +4,17 @@
  *
  */
 
-import React from 'react'
+import { h, Component } from 'preact'
+
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { Link } from 'preact-router/match'
 import map from 'lodash/map'
 
-import AnimatedImage from 'components/atoms/AnimatedImage'
+import AnimatedImage from '@/js/components/atoms/AnimatedImage'
 
 import './style.css'
 
-
-export default class Projects extends React.Component {
+export default class Projects extends Component {
   static propTypes = {
     projects: PropTypes.object,
   }
@@ -24,17 +24,15 @@ export default class Projects extends React.Component {
       <div className="projects">
         <div className="projects__title">Projects</div>
         <div className="projects__list">
-          {
-            map(this.props.projects, project =>
-              <Link
-                className="projects__item"
-                key={project.id}
-                to={`/${project.slug}`}
-              >
-                <AnimatedImage src={project.image} />
-              </Link>
-            )
-          }
+          {map(this.props.projects, project => (
+            <Link
+              className="projects__item"
+              key={project.id}
+              href={`/${project.slug}`}
+            >
+              <AnimatedImage src={project.image} />
+            </Link>
+          ))}
         </div>
       </div>
     )

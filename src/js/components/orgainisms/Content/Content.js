@@ -4,17 +4,17 @@
  *
  */
 
-import React from 'react'
+import { h, Component } from 'preact'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
+import { connect } from 'preact-redux'
 
-import Preloader from 'components/orgainisms/Preloader'
-import Footer from 'components/orgainisms/Footer'
-import Projects from 'components/orgainisms/Projects'
-import ServiceList from 'components/orgainisms/ServiceList'
-import Articles from 'components/orgainisms/Articles'
-import TopBlock from 'components/orgainisms/TopBlock'
-import TopPanel from 'components/orgainisms/TopPanel'
+import Preloader from '@/js/components/orgainisms/Preloader'
+import Footer from '@/js/components/orgainisms/Footer'
+import Projects from '@/js/components/orgainisms/Projects'
+import ServiceList from '@/js/components/orgainisms/ServiceList'
+import Articles from '@/js/components/orgainisms/Articles'
+import TopBlock from '@/js/components/orgainisms/TopBlock'
+import TopPanel from '@/js/components/orgainisms/TopPanel'
 
 import imagesLoaded from 'imagesloaded'
 
@@ -24,7 +24,7 @@ import './style.css'
   locale,
   projects,
 }))
-export default class Content extends React.Component {
+export default class Content extends Component {
   static propTypes = {
     children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
     projects: PropTypes.object,

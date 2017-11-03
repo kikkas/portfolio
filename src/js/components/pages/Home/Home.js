@@ -4,24 +4,17 @@
  *
  */
 
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import Helmet from 'react-helmet'
+import { h, Component } from 'preact'
+import { connect } from 'preact-redux'
+import Helmet from 'preact-helmet'
 import PropTypes from 'prop-types'
 
-import Navbar from 'components/orgainisms/Navbar'
-import Footer from 'components/orgainisms/Footer'
-import Content from 'components/orgainisms/Content'
-// import TopPanel from 'components/orgainisms/TopPanel'
-import Projects from 'components/orgainisms/Projects'
-import ServiceList from 'components/orgainisms/ServiceList'
-import Articles from 'components/orgainisms/Articles'
-import TopBlock from 'components/orgainisms/TopBlock'
+import Navbar from '@/js/components/orgainisms/Navbar'
+import Content from '@/js/components/orgainisms/Content'
 
 import './style.css'
 
-@connect(({ app: { locale }, projects }) => ({
-  locale,
+@connect(({ projects }) => ({
   projects,
 }))
 export default class Home extends Component {
@@ -36,14 +29,7 @@ export default class Home extends Component {
 
         <Navbar />
 
-        <Content preloader>
-          {/*<TopBlock />*/}
-          {/*<TopPanel />*/}
-          {/*<Projects projects={this.props.projects} />
-          <ServiceList />
-          <Articles />
-          <Footer />*/}
-        </Content>
+        <Content preloader />
       </div>
     )
   }

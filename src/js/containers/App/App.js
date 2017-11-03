@@ -4,28 +4,25 @@
  *
  */
 
-import React, { Component } from 'react'
+import { h, Component } from 'preact'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
+import { connect } from 'preact-redux'
 
-import { init as initProjects } from 'actions/projectsActions'
+import { init as initProjects } from '@/js/actions/projectsActions'
 
 import projectImage1 from 'assets/img/project-2@2x.png'
 import projectImage2 from 'assets/img/project-3@2x.png'
 
 import './style.css'
 
-
-@connect(({
-  router: { location: { pathname } },
-}) => ({
-  pathname
+@connect(({ app: { locale } }) => ({
+  locale,
 }))
 export default class App extends Component {
   static propTypes = {
     dispatch: PropTypes.func,
     children: PropTypes.array,
-    pathname: PropTypes.string,
+    locale: PropTypes.string,
   }
 
   componentWillMount() {
@@ -41,7 +38,7 @@ export default class App extends Component {
         image: projectImage2,
         name: 'second project',
         slug: 'project_2',
-      }
+      },
     }
 
     this.props.dispatch(initProjects(projects))
@@ -50,10 +47,6 @@ export default class App extends Component {
   render() {
     const { children } = this.props
 
-    return (
-      <main className="main-container">
-        {children}
-      </main>
-    )
+    return <main className="main-container">{children}</main>
   }
 }

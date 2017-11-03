@@ -4,13 +4,9 @@
  *
  */
 
-import {
-  PROJECTS__INIT,
-} from 'constants/ActionTypes'
-
+import { PROJECTS__INIT } from '@/js/constants/ActionTypes'
 
 const initialState = {}
-
 
 function projectsReducer(state = initialState, action) {
   switch (action.type) {

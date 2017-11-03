@@ -1,15 +1,17 @@
 {
-  "env": {
-    "development": {
-      "presets": ["react-hmre"]
-    }
-  },
   "presets": [
     ["es2015", { "modules": false }],
     "react",
     "stage-2"
   ],
   "plugins": [
+    ["transform-imports", {
+      "lodash": {
+        "transform": "lodash/${member}",
+        "preventFullImport": false
+      }
+    }],
+    ["transform-react-jsx", { "pragma":"h" }],
     "transform-decorators-legacy",
     "transform-class-properties"
   ]

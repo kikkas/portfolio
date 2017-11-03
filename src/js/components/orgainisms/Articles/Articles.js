@@ -4,14 +4,13 @@
  *
  */
 
-import React from 'react'
+import { h, Component } from 'preact'
 
-import Article from 'components/molecules/Article'
+import Article from '@/js/components/molecules/Article'
 
 import './style.css'
 
-
-export default class Articles extends React.Component {
+export default class Articles extends Component {
   constructor() {
     super()
 
@@ -39,16 +38,14 @@ export default class Articles extends React.Component {
       <div className="articles">
         <div className="articles__title">Behind my mind</div>
         <div className="articles__list">
-          {
-            this.articles.map((article, index) =>
-              <Article
-                key={index}
-                title={article.title}
-                type={article.type}
-                link={article.link}
-              />
-            )
-          }
+          {this.articles.map((article, index) => (
+            <Article
+              key={index}
+              title={article.title}
+              type={article.type}
+              link={article.link}
+            />
+          ))}
         </div>
       </div>
     )

@@ -1,13 +1,11 @@
 import { combineReducers } from 'redux'
-import { routerReducer } from 'react-router-redux'
 
-import appReducer from 'reducers/appReducer'
-import projectsReducer from 'reducers/projectsReducer'
+import appReducer from '@/js/reducers/appReducer'
+import projectsReducer from '@/js/reducers/projectsReducer'
 
 const rootReducer = combineReducers({
   app: appReducer,
   projects: projectsReducer,
-  router: routerReducer,
 })
 
 export default rootReducer

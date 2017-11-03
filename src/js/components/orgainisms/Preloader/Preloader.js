@@ -4,19 +4,20 @@
  *
  */
 
-import React from 'react'
+import { h, Component } from 'preact'
+
 import PropTypes from 'prop-types'
 
 import { isFunction } from 'lodash'
 
 import $ from 'jquery'
 import 'gsap/TweenMax'
-import 'vendor/cooltext/cooltext.animations.js'
-import 'vendor/cooltext/cooltext.min.js'
+import '@/vendor/cooltext/cooltext.animations.js'
+import '@/vendor/cooltext/cooltext.min.js'
 
 import './style.css'
 
-export default class Preloader extends React.Component {
+export default class Preloader extends Component {
   static propTypes = {
     onCompleteStep: PropTypes.func,
   }

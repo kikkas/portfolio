@@ -4,14 +4,15 @@
  *
  */
 
-import React from 'react'
+import { h, Component } from 'preact'
+
 import PropTypes from 'prop-types'
 
-import { duration } from 'utils/RxJS/helpers'
+import { duration } from '@/js/utils/RxJS/helpers'
 // import easeOutQuart from 'eases/quart-out'
 import easeOutQuart from 'eases/quart-out'
-import easeInQuart from 'eases/quart-in'
-import easeInQuint from 'eases/quint-in'
+// import easeInQuart from 'eases/quart-in'
+// import easeInQuint from 'eases/quint-in'
 import easeInOutSine from 'eases/sine-in-out'
 
 import videoUrl_1 from 'assets/video/1.mp4'
@@ -24,7 +25,7 @@ import { random } from 'lodash'
 
 import './style.css'
 
-export default class TopBlock extends React.Component {
+export default class TopBlock extends Component {
   static propTypes = {
     prop: PropTypes.object,
   }

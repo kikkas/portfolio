@@ -4,22 +4,22 @@
  *
  */
 
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { h, Component } from 'preact'
+
+import { Link } from 'preact-router/match'
 
 import $ from 'jquery'
 import 'gsap/TweenMax'
-import 'vendor/cooltext/cooltext.animations.js'
-import 'vendor/cooltext/cooltext.min.js'
+import '@/vendor/cooltext/cooltext.animations.js'
+import '@/vendor/cooltext/cooltext.min.js'
 
-import AnimatedImage from 'components/atoms/AnimatedImage'
+import AnimatedImage from '@/js/components/atoms/AnimatedImage'
 
 import imageUrl from 'assets/img/project-featured@2x.png'
 
 import './style.css'
 
-
-export default class TopPanel extends React.Component {
+export default class TopPanel extends Component {
   state = {
     initialized: true,
   }
@@ -29,7 +29,7 @@ export default class TopPanel extends React.Component {
 
     elem.cooltext({
       // onVisible:{action:"animation", animation:"cool67"},
-      sequence:[
+      sequence: [
         {
           action: 'animation',
           animation: 'cool12',
@@ -40,12 +40,19 @@ export default class TopPanel extends React.Component {
           animation: 'cool150',
           speed: 100,
           stagger: 100,
-          order: 'reverse',   // animate the elements in reverse order
+          order: 'reverse', // animate the elements in reverse order
         },
         {
-          action:"animation",
-          animation:["cool111","cool112","cool118","cool148","cool156","cool187"],
-          stagger:150
+          action: 'animation',
+          animation: [
+            'cool111',
+            'cool112',
+            'cool118',
+            'cool148',
+            'cool156',
+            'cool187',
+          ],
+          stagger: 150,
         },
         {
           action: 'animation',
@@ -59,7 +66,7 @@ export default class TopPanel extends React.Component {
                 initialized: true,
               })
             }, 200)
-          }
+          },
         },
       ],
     })
@@ -68,25 +75,29 @@ export default class TopPanel extends React.Component {
   render() {
     return (
       <div className="top-panel">
-        {
-          !this.state.initialized ?
-            <div className="top-panel__animation-desk">
-              <div className="top-panel__animation-desk-text">Magic is happening</div>
-            </div> :
-            <div className="top-panel__content">
-              <div className="top-panel__column">
-                <div className="top-panel__name">Martin Kikkas</div>
-                <div className="top-panel__bio">Product designer</div>
-                <div className="top-panel__bio-description">With focus on data driven design and innovation</div>
-                <Link to="/about" className="top-panel__about-link">
-                  Read my story
-                </Link>
-              </div>
-              <div className="top-panel__column">
-                <AnimatedImage src={imageUrl} />
-              </div>
+        {!this.state.initialized ? (
+          <div className="top-panel__animation-desk">
+            <div className="top-panel__animation-desk-text">
+              Magic is happening
             </div>
-        }
+          </div>
+        ) : (
+          <div className="top-panel__content">
+            <div className="top-panel__column">
+              <div className="top-panel__name">Martin Kikkas</div>
+              <div className="top-panel__bio">Product designer</div>
+              <div className="top-panel__bio-description">
+                With focus on data driven design and innovation
+              </div>
+              <Link href="/about" className="top-panel__about-link">
+                Read my story
+              </Link>
+            </div>
+            <div className="top-panel__column">
+              <AnimatedImage src={imageUrl} />
+            </div>
+          </div>
+        )}
       </div>
     )
   }

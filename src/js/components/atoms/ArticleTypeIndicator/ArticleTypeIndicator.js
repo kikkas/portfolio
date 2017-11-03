@@ -4,13 +4,12 @@
  *
  */
 
-import React from 'react'
+import { h, Component } from 'preact'
 import PropTypes from 'prop-types'
 
 import './style.css'
 
-
-export default class ArticleTypeIndicator extends React.Component {
+export default class ArticleTypeIndicator extends Component {
   static propTypes = {
     type: PropTypes.string,
   }
@@ -20,10 +19,9 @@ export default class ArticleTypeIndicator extends React.Component {
 
     return (
       <div
-        className={`article-type-indicator ${
-          type === 'article' ? 'article-type-indicator--green' :
-          type === 'teardown' ? 'article-type-indicator--blue' : ''
-        }`}
+        className={`article-type-indicator ${type === 'article'
+          ? 'article-type-indicator--green'
+          : type === 'teardown' ? 'article-type-indicator--blue' : ''}`}
       >
         {type}
       </div>

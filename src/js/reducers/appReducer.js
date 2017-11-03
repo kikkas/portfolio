@@ -4,12 +4,9 @@
  *
  */
 
-import {
-  APP__INIT,
-} from 'constants/ActionTypes'
+import { APP__INIT } from '@/js/constants/ActionTypes'
 
 const initialState = {}
-
 
 function appReducer(state = initialState, action) {
   switch (action.type) {

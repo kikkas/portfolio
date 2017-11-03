@@ -4,12 +4,9 @@
  *
  */
 
-import {
-  APP__INIT,
-} from 'constants/ActionTypes'
+import { APP__INIT } from '@/js/constants/ActionTypes'
 
-
-export const init = (data) => ({
+export const init = data => ({
   type: APP__INIT,
   payload: {
     ...data,

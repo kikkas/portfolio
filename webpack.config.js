@@ -4,11 +4,6 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin')
 
-var NODE_ENV = process.env.NODE_ENV || 'development'
-
-var configFilePath = path.join(process.cwd(), 'config', NODE_ENV + '.config.js')
-var config = require(configFilePath)
-
 var DEBUG = process.env.NODE_ENV !== 'production'
 
 module.exports = {
@@ -17,15 +12,11 @@ module.exports = {
   cache: DEBUG,
 
   entry: DEBUG
-    ? [
-        'webpack-hot-middleware/client',
-        'babel-polyfill',
-        path.join(__dirname, '..', 'src', 'js', 'app.js'),
-      ]
-    : ['babel-polyfill', path.join(__dirname, '..', 'src', 'js', 'app.js')],
+    ? ['babel-polyfill', path.join(__dirname, 'src', 'js', 'app.js')]
+    : ['babel-polyfill', path.join(__dirname, 'src', 'js', 'app.js')],
 
   output: {
-    path: path.join(__dirname, '..', 'build'),
+    path: path.join(__dirname, 'build'),
     publicPath: '/',
     filename: DEBUG ? 'js/bundle.js' : 'js/bundle.min.js',
   },
@@ -53,7 +44,7 @@ module.exports = {
           },
         ],
         exclude: /(node_modules)/,
-        include: path.join(__dirname, '..', 'src'),
+        include: path.join(__dirname, 'src'),
       },
 
       {
@@ -113,22 +104,15 @@ module.exports = {
 
       {
         test: /\.json$/,
-        use: [
-          {
-            loader: 'json-loader',
-            options: {
-              name: 'json/[name].[ext]',
-            },
-          },
-        ],
+        loader: 'json-loader',
       },
 
       {
         test: /\.(svg)$/,
         loader: 'raw-loader',
         exclude: [
-          path.resolve(__dirname, '../assets/img'),
-          path.resolve(__dirname, '../assets/fonts'),
+          path.resolve(__dirname, './assets/img'),
+          path.resolve(__dirname, './assets/fonts'),
         ],
       },
 
@@ -159,13 +143,9 @@ module.exports = {
   },
 
   resolve: {
-    modules: [
-      path.join(__dirname, '..', 'src'),
-      path.join(__dirname, '..', 'src', 'js'),
-      'node_modules',
-    ],
     alias: {
-      assets: path.join(__dirname, '..', 'assets'),
+      '@': path.join(__dirname, 'src'),
+      assets: path.join(__dirname, 'assets'),
     },
     plugins: [new DirectoryNamedWebpackPlugin(true)],
   },
@@ -177,7 +157,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify(config.NODE_ENV),
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
       },
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
@@ -189,7 +169,7 @@ module.exports = {
           new HtmlWebpackPlugin({
             template: 'index.ejs',
             environment: 'development',
-            favicon: path.join(__dirname, '..', 'assets', 'img', 'favicon.png'),
+            favicon: path.join(__dirname, 'assets', 'img', 'favicon.png'),
           }),
         ]
       : [
@@ -216,7 +196,7 @@ module.exports = {
               minifyURLs: true,
             },
             environment: 'production',
-            favicon: path.join(__dirname, '..', 'assets', 'img', 'favicon.png'),
+            favicon: path.join(__dirname, 'assets', 'img', 'favicon.png'),
           }),
           new webpack.ContextReplacementPlugin(
             /node_modules\/moment\/locale/,
@@ -224,6 +204,13 @@ module.exports = {
           ),
         ]
   ),
+
+  devServer: {
+    contentBase: path.join(__dirname, 'build'),
+    open: true,
+    port: 3000,
+    historyApiFallback: true,
+  },
 
   target: 'web',
 
