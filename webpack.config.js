@@ -11,9 +11,7 @@ module.exports = {
 
   cache: DEBUG,
 
-  entry: DEBUG
-    ? ['babel-polyfill', path.join(__dirname, 'src', 'js', 'app.js')]
-    : ['babel-polyfill', path.join(__dirname, 'src', 'js', 'app.js')],
+  entry: path.join(__dirname, 'src', 'js', 'app.js'),
 
   output: {
     path: path.join(__dirname, 'build'),
