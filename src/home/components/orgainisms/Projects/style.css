@@ -1,0 +1,56 @@
+@import 'colors.css';
+@import 'typography.css';
+
+.projects {
+  margin-bottom: 160px;
+  margin-top: 160px;
+  width: 100%;
+  /* display: flex; */
+  max-width: 1020px;
+
+  @media (max-width: 767px) {
+    margin-top: 66px;
+    margin-bottom: 94px;
+  }
+
+  &__title {
+    font-family: var(--font-sfns);
+    font-size: 35px;
+    color: var(--color-white);
+    letter-spacing: -0.1px;
+    text-align: left;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+
+    @media (max-width: 767px) {
+      height: 35px;
+      font-size: 24px;
+      letter-spacing: -0.07px;
+      margin-bottom: 58px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 480px;
+
+    &:not(:nth-child(-n + 2)) {
+      @media (min-width: 767px) {
+        margin-top: 46px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 37px;
+    }
+  }
+}

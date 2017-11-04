@@ -11,7 +11,7 @@ module.exports = {
 
   cache: DEBUG,
 
-  entry: path.join(__dirname, 'src', 'js', 'app.js'),
+  entry: path.join(__dirname, 'src', 'app', 'index.js'),
 
   output: {
     path: path.join(__dirname, 'build'),
