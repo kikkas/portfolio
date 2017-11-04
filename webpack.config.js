@@ -21,12 +21,12 @@ module.exports = {
 
   module: {
     rules: [
-      {
-        enforce: 'pre',
-        test: /\.jsx?$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/,
-      },
+      // {
+      //   enforce: 'pre',
+      //   test: /\.jsx?$/,
+      //   loader: 'eslint-loader',
+      //   exclude: /node_modules/,
+      // },
 
       {
         test: /\.jsx?$/,
@@ -127,7 +127,7 @@ module.exports = {
       },
 
       {
-        test: /video\/.+\.(mov|mp4)$/,
+        test: /\.mp4$/,
         use: [
           {
             loader: 'file-loader',
