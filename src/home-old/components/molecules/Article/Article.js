@@ -8,7 +8,7 @@ import { h, Component } from 'preact'
 import PropTypes from 'prop-types'
 import { Link } from 'preact-router/match'
 
-import ArticleTypeIndicator from '@/home/components/atoms/ArticleTypeIndicator'
+import ArticleTypeIndicator from '@/home-old/components/atoms/ArticleTypeIndicator'
 
 import './style.css'
 

@@ -9,8 +9,8 @@ import { connect } from 'preact-redux'
 import Helmet from 'preact-helmet'
 import PropTypes from 'prop-types'
 
-import Content from '@/home/components/organisms/Content'
-import Navbar from '@/home/components/organisms/Navbar'
+import Navbar from '@/home-old/components/orgainisms/Navbar'
+import Content from '@/home-old/components/orgainisms/Content'
 
 import './style.css'
 
@@ -24,10 +24,12 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className="home-page">
+      <div className="home-page-old">
         <Helmet title="Martin Kikkas" />
-        <Navbar title="About" link="/about" />
-        <Content />
+
+        <Navbar />
+
+        <Content preloader />
       </div>
     )
   }

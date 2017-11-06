@@ -6,7 +6,7 @@
 
 import { h, Component } from 'preact'
 
-import Article from '@/home/components/molecules/Article'
+import Article from '@/home-old/components/molecules/Article'
 
 import './style.css'
 

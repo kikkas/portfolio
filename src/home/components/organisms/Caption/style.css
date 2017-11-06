@@ -1,0 +1,64 @@
+@import 'colors.css';
+@import 'typography.css';
+
+.about-me {
+  width: 100%;
+  margin-top: 160px;
+  padding: 0 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 585px;
+    height: 70px;
+    letter-spacing: -0.2px;
+    font-size: 48px;
+    font-family: var(--font-tisa-ot-lt);
+    margin-bottom: 24px;
+
+    @media (max-width: 767px) {
+      font-size: 26px;
+      height: 38px;
+      width: 100%;
+      margin-bottom: 9px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 595px;
+    font-size: 20px;
+    font-family: var(--font-akagi-pro-lt);
+    margin-bottom: 16px;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 9px;
+    }
+  }
+
+  &__my-story {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 122px;
+    height: 20px;
+    font-family: var(--font-akagi-pro-bd);
+    font-size: 14px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 98px;
+    align-items: flex-start;
+  }
+}

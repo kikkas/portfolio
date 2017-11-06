@@ -13,6 +13,7 @@ import '@/app/css/main.css'
 import App from '@/app/container'
 import Home from '@/home'
 import About from '@/about'
+import Old from '@/home-old'
 
 import initialState from '@/app/initialState'
 import { configureStore } from './store'
@@ -25,6 +26,7 @@ render(
       <Router>
         <Home path="/" />
         <About path="/about" />
+        <Old path="/old" />
       </Router>
     </App>
   </Provider>,
