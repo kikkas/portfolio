@@ -26,7 +26,7 @@ export default class Cobase extends Component {
     return (
       <div className="cobase-page">
         <Helmet title="Martin Kikkas | Cobase" />
-        <Navbar title="Back to homepage" link="/about" />
+        <Navbar title="Back to homepage" link="/" />
         <Content />
       </div>
     )

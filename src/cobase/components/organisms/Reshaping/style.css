@@ -1,0 +1,48 @@
+@import 'colors.css';
+@import 'typography.css';
+
+.cobase-reshaping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--font-tisa-ot-lt);
+    margin-bottom: 16px;
+    line-height: 1.3;
+    width: 100%;
+    min-height: 54px;
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+      width: 340px;
+      height: 58px;
+    }
+  }
+
+  &__content {
+    font-size: 20px;
+    font-family: var(--font-akagi-pro-lt);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 1.4;
+    width: 745px;
+    height: 112px;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      width: 340px;
+      height: 154px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 80px;
+  }
+}
