@@ -11,6 +11,7 @@ import { connect } from 'preact-redux'
 import imagesLoaded from 'imagesloaded'
 
 import TopBlock from '@/cobase/components/organisms/TopBlock'
+import Cover from '@/cobase/components/organisms/Cover'
 
 import './style.css'
 
@@ -19,6 +20,7 @@ export default class Content extends Component {
     return (
       <div className="cobase-page-content">
         <TopBlock />
+        <Cover />
       </div>
     )
   }

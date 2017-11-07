@@ -1,0 +1,10 @@
+@import 'colors.css';
+@import 'typography.css';
+
+.cobase-cover {
+  margin-top: 24px;
+
+  &__image {
+    width: 100%;
+  }
+}
