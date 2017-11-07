@@ -1,10 +1,14 @@
 /* css/shared/typography.css */
 
 :root {
-  --font-heebo: "Heebo-Regular";
-  --font-heebo-md: "Heebo-Medium";
-  --font-heebo-lt: "Heebo-Light";
-  --font-heebo-bd: "Heebo-Bold";
-  --font-sfns: "San Francisco";
+  --font-heebo: 'Heebo-Regular';
+  --font-heebo-md: 'Heebo-Medium';
+  --font-heebo-lt: 'Heebo-Light';
+  --font-heebo-bd: 'Heebo-Bold';
+  --font-sfns: 'San Francisco';
   --font-apple-system: BlinkMacSystemFont, sans-serif;
+  --font-akagi-pro-bd: 'Akagi-Pro-Bold';
+  --font-tisa-pro-md: 'Tisa-Pro-Medi';
+  --font-tisa-ot-lt: 'Tisa-OT-Light';
+  --font-akagi-pro-lt: 'Akagi-Pro-Light';
 }

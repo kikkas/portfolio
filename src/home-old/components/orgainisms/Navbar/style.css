@@ -1,7 +1,7 @@
 @import 'colors.css';
 @import 'typography.css';
 
-.navbar {
+.navbar-old {
   width: 100vw;
   height: 306px;
   display: flex;

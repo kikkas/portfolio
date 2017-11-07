@@ -35,3 +35,31 @@
   font-style: normal;
   font-weight: 400;
 }
+
+@font-face {
+  font-family: var(--font-akagi-pro-bd);
+  src: url('~assets/fonts/Akagi-Pro-bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: var(--font-tisa-pro-md);
+  src: url('~assets/fonts/TisaPro-Medi.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: var(--font-tisa-ot-lt);
+  src: url('~assets/fonts/FF-Tisa-OT-Light.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: var(--font-akagi-pro-lt);
+  src: url('~assets/fonts/Akagi-Pro-light.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}

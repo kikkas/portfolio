@@ -11,8 +11,8 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 100vw;
-    max-width: 1020px;
+    width: 100%;
+    max-width: 1250px;
     text-align: center;
     position: relative;
     font-family: var(--font-heebo-md);

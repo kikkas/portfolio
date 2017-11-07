@@ -8,8 +8,8 @@ import { h, Component } from 'preact'
 import { connect } from 'preact-redux'
 import Helmet from 'preact-helmet'
 
-import Navbar from '@/home/components/orgainisms/Navbar'
-import Footer from '@/home/components/orgainisms/Footer'
+import Navbar from '@/cobase/components/organisms/Navbar'
+import Footer from '@/home-old/components/orgainisms/Footer'
 
 import './style.css'
 
@@ -23,9 +23,7 @@ export default class About extends Component {
         <div className="about-page__container">
           <Helmet title="Martin Kikkas | About" />
 
-          <Navbar light />
-
-          <Footer light />
+          <Navbar title="Back to homepage" link="/" />
         </div>
       </div>
     )
