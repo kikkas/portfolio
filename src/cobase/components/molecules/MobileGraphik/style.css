@@ -1,0 +1,18 @@
+.mobile-graphik-lg {
+  max-width: 1062px;
+
+  &__image {
+    width: 100%;
+  }
+}
+
+.mobile-graphik-sm {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+
+  &__images {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}

@@ -13,6 +13,7 @@ import imagesLoaded from 'imagesloaded'
 import TopBlock from '@/cobase/components/organisms/TopBlock'
 import Cover from '@/cobase/components/organisms/Cover'
 import Reshaping from '@/cobase/components/organisms/Reshaping'
+import CreatingOnMobile from '@/cobase/components/organisms/Mobile'
 
 import './style.css'
 
@@ -23,6 +24,7 @@ export default class Content extends Component {
         <TopBlock />
         <Cover />
         <Reshaping />
+        <CreatingOnMobile />
       </div>
     )
   }
