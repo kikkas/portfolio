@@ -7,6 +7,10 @@
 import { h, Component } from 'preact'
 import PropTypes from 'prop-types'
 
+import imageUrl from 'assets/img/cobase-project-image-1@2x.png'
+import Construction from '@/cobase/components/molecules/Construction'
+import Mistakes from '@/cobase/components/molecules/Mistakes'
+
 import './style.css'
 
 export default class Reshaping extends Component {
@@ -17,11 +21,8 @@ export default class Reshaping extends Component {
           Reshaping hardest heavyiest industries of them all
         </div>
         <div className="cobase-reshaping__content">
-          Construction is one of the oldest and most conservative industries as
-          you might be expecting. Despite of that we build using materials and
-          tools that tens of times faster and efficiant, except one - the
-          process how people work together. That is where Cobase was born -
-          change the way how poeple work together on construction sites.
+          <Construction />
+          <Mistakes />
         </div>
       </div>
     )
