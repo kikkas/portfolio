@@ -11,23 +11,24 @@ import './style.css'
 
 export default class DesignSystemAtom extends Component {
   render() {
+    const { name, imageUrl } = this.props
     return (
       <div className="microelements">
         <div className="microelements__elem">
           <img
-            className={`${this.props.name === 'atoms'
+            className={`${name === 'atoms'
               ? 'microelements__elem__atom'
-              : this.props.name === 'molecules'
+              : name === 'molecules'
                 ? 'microelements__elem__molecule'
-                : this.props.name === 'organisms'
+                : name === 'organisms'
                   ? 'microelements__elem__organism'
-                  : this.props.name === 'components'
+                  : name === 'components'
                     ? 'microelements__elem__component'
                     : ''}`}
-            src={this.props.imageUrl}
+            src={imageUrl}
           />
         </div>
-        <div className="microelements__name">{this.props.name}</div>
+        <div className="microelements__name">{name}</div>
       </div>
     )
   }
