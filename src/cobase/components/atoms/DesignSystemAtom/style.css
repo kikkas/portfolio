@@ -17,13 +17,29 @@
     border-radius: 100%;
     margin-bottom: 17px;
 
-    &__image {
+    &__atom {
       width: 48px;
       height: 52px;
+    }
+
+    &__molecule {
+      width: 55px;
+      height: 61px;
+    }
+
+    &__organism {
+      width: 51px;
+      height: 51px;
+    }
+
+    &__component {
+      width: 76px;
+      height: 56px;
     }
   }
 
   &__name {
+    text-transform: uppercase;
     display: flex;
     align-items: center;
     height: 20px;

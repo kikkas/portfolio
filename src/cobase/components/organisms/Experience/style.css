@@ -7,7 +7,7 @@
   align-items: center;
   width: 100%;
   background-color: var(--color-blue-light);
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 
   &__header {
     display: flex;
@@ -46,6 +46,6 @@
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 64px;
+    padding-bottom: 64px;
   }
 }

@@ -15,7 +15,15 @@ export default class DesignSystemAtom extends Component {
       <div className="microelements">
         <div className="microelements__elem">
           <img
-            className="microelements__elem__image"
+            className={`${this.props.name === 'atoms'
+              ? 'microelements__elem__atom'
+              : this.props.name === 'molecules'
+                ? 'microelements__elem__molecule'
+                : this.props.name === 'organisms'
+                  ? 'microelements__elem__organism'
+                  : this.props.name === 'components'
+                    ? 'microelements__elem__component'
+                    : ''}`}
             src={this.props.imageUrl}
           />
         </div>

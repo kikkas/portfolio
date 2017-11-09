@@ -19,10 +19,10 @@ export default class DesignAtoms extends Component {
   render() {
     return (
       <div className="design-atoms">
-        <DesignSystemAtom name="ATOMS" imageUrl={imgUrlAtoms} />
-        <DesignSystemAtom name="MOLECULES" imageUrl={imgUrlMolecules} />
-        <DesignSystemAtom name="ORGANISMS" imageUrl={imgUrlOrganisms} />
-        <DesignSystemAtom name="COMPONENTS" imageUrl={imgUrlComponents} />
+        <DesignSystemAtom name="atoms" imageUrl={imgUrlAtoms} />
+        <DesignSystemAtom name="molecules" imageUrl={imgUrlMolecules} />
+        <DesignSystemAtom name="organisms" imageUrl={imgUrlOrganisms} />
+        <DesignSystemAtom name="components" imageUrl={imgUrlComponents} />
       </div>
     )
   }
