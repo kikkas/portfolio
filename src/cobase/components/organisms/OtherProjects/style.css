@@ -1,0 +1,50 @@
+@import 'colors.css';
+@import 'typography.css';
+
+.other-projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 78px;
+  margin-bottom: 153px;
+
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 274px;
+    height: 41px;
+    font-size: 36px;
+    font-family: var(--font-tisa-ot-lt);
+    margin-bottom: 40px;
+
+    @media (max-width: 767px) {
+      width: 183px;
+      height: 29px;
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+
+    &__images {
+      flex: 1;
+
+      &__image {
+        max-width: 576px;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 123px;
+  }
+}

@@ -14,6 +14,10 @@ import TopBlock from '@/cobase/components/organisms/TopBlock'
 import Cover from '@/cobase/components/organisms/Cover'
 import Reshaping from '@/cobase/components/organisms/Reshaping'
 import CreatingOnMobile from '@/cobase/components/organisms/Mobile'
+import Experience from '@/cobase/components/organisms/Experience'
+import DesignSystem from '@/cobase/components/organisms/DesignSystem'
+import ToolsUsed from '@/cobase/components/organisms/ToolsUsed'
+import OtherProjects from '@/cobase/components/organisms/OtherProjects'
 
 import './style.css'
 
@@ -25,6 +29,10 @@ export default class Content extends Component {
         <Cover />
         <Reshaping />
         <CreatingOnMobile />
+        <Experience />
+        <DesignSystem />
+        <ToolsUsed />
+        <OtherProjects />
       </div>
     )
   }
