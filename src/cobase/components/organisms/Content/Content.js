@@ -15,6 +15,7 @@ import Cover from '@/cobase/components/organisms/Cover'
 import Reshaping from '@/cobase/components/organisms/Reshaping'
 import CreatingOnMobile from '@/cobase/components/organisms/Mobile'
 import Experience from '@/cobase/components/organisms/Experience'
+import DesignSystem from '@/cobase/components/organisms/DesignSystem'
 
 import './style.css'
 
@@ -27,6 +28,7 @@ export default class Content extends Component {
         <Reshaping />
         <CreatingOnMobile />
         <Experience />
+        <DesignSystem />
       </div>
     )
   }
