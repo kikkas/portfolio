@@ -8,4 +8,5 @@
   flex: 1;
   background-color: var(--color-white);
   position: relative;
+  max-width: 1280px;
 }
