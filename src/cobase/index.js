@@ -11,6 +11,15 @@ import PropTypes from 'prop-types'
 
 import Content from '@/cobase/components/organisms/Content'
 import Navbar from '@/cobase/components/organisms/Navbar'
+import TopBlock from '@/cobase/components/organisms/TopBlock'
+import Cover from '@/cobase/components/organisms/Cover'
+import Reshaping from '@/cobase/components/organisms/Reshaping'
+import CreatingOnMobile from '@/cobase/components/organisms/Mobile'
+import Experience from '@/cobase/components/organisms/Experience'
+import DesignSystem from '@/cobase/components/organisms/DesignSystem'
+import ToolsUsed from '@/cobase/components/organisms/ToolsUsed'
+import OtherProjects from '@/cobase/components/organisms/OtherProjects'
+import Footer from '@/cobase/components/organisms/Footer'
 
 import './style.css'
 
@@ -27,7 +36,17 @@ export default class Cobase extends Component {
       <div className="cobase-page">
         <Helmet title="Martin Kikkas | Cobase" />
         <Navbar title="Back to homepage" link="/" />
-        <Content />
+        <Content>
+          <TopBlock />
+          <Cover />
+          <Reshaping />
+          <CreatingOnMobile />
+          <Experience />
+          <DesignSystem />
+          <ToolsUsed />
+          <OtherProjects />
+        </Content>
+        <Footer />
       </div>
     )
   }

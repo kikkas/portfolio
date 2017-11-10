@@ -1,9 +1,4 @@
-@import 'colors.css';
-@import 'typography.css';
-
 .cobase-cover {
-  margin-top: 24px;
-
   &__video-block {
     width: 100vw;
   }
