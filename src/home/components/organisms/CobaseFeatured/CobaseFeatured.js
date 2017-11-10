@@ -55,6 +55,13 @@ export default class CobaseFeatured extends Component {
             />
           )}
         </div>
+        {this.state.windowWidth < 768 ? (
+          <div className="cobase-featured__building">
+            <Building />
+          </div>
+        ) : (
+          ''
+        )}
       </div>
     )
   }

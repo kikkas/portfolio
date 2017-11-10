@@ -33,7 +33,11 @@
     }
   }
 
+  &__building {
+    position: relative;
+  }
+
   @media (max-width: 767px) {
-    margin-bottom: 23px;
+    margin-bottom: 64px;
   }
 }

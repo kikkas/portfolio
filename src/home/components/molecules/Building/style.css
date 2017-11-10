@@ -37,8 +37,8 @@
     align-items: center;
     font-size: 20px;
     font-family: var(--font-akagi-pro-lt);
-    height: 56px;
-    max-width: 295px;
+    min-height: 56px;
+    width: 100%;
     line-height: 1.5;
     margin-bottom: 31px;
   }
@@ -60,5 +60,15 @@
     height: 264px;
     top: 20px;
     left: 20px;
+  }
+
+  @media (max-width: 767px) {
+    top: 0;
+    left: 0;
+    padding: 0;
+    position: relative;
+    margin: 23px 0 0 16px;
+    height: auto;
+    width: 100%;
   }
 }
