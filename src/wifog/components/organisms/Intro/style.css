@@ -1,0 +1,87 @@
+@import 'colors.css';
+@import 'typography.css';
+
+.wifog-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+  margin-bottom: 119px;
+  width: 100%;
+  max-width: 750px;
+
+  &__header {
+    display: flex;
+    text-align: left;
+    font-size: 36px;
+    font-family: var(--font-tisa-ot-lt);
+    line-height: 1.3;
+    width: 100%;
+    min-height: 54px;
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+      width: 340px;
+      height: 58px;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    font-family: var(--font-akagi-pro-lt);
+    display: flex;
+    text-align: left;
+    line-height: 1.4;
+    width: 745px;
+    height: 112px;
+    margin-bottom: 3rem;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      width: 340px;
+      height: 154px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__img {
+      width: 100vw;
+  }
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 80px;
+    margin-bottom: 48px;
+  }
+
+
+}
+
+.wrapper-process {
+    width: 100%;
+    @media (max-width: 767px) {
+      width: auto;
+    }
+
+}
+
+.design-process {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 767px) {
+    width: 340px;
+  }
+}
