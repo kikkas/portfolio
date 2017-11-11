@@ -20,6 +20,14 @@
     width: 100%;
     align-items: flex-start;
     margin-left: 6rem;
+    @media (max-width: 767px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-bottom: 1rem;
+      width: 100vw;
+    }
 
 
 

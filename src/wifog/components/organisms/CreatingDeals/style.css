@@ -21,6 +21,15 @@
     align-items: flex-start;
     margin-left: 6rem;
     margin-bottom: 6rem;
+    @media (max-width: 767px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-bottom: 1rem;
+      width: 100vw;
+    }
+
 
 
 
@@ -78,15 +87,19 @@
         margin-bottom: 5rem;
         margin-left: 7rem;
         margin-right: 7rem;
+        @media (max-width: 767px) {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
 
     }
 
     &__img{
         width: 100%;
         box-shadow: 0 13px 30px 0 rgba(35,46,82,0.71);
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;
+
 
     }
 

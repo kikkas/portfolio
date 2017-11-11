@@ -18,6 +18,10 @@
     align-items: flex-start;
     margin-right: 10px;
     margin-left: 6rem;
+    @media (max-width: 767px) {
+      margin-left: 1rem;
+      
+    }
 
 
 
@@ -59,10 +63,18 @@
 
     &__wrapper {
         max-width: 750px;
+
+        @media (max-width: 767px) {
+          max-width: 500px;
+          text-align: center;
+        }
     }
 
     &__img{
         max-width:100%;
+        @media (max-width: 767px) {
+          max-width: 80%;
+        }
     }
 
   @media (max-width: 767px) {
