@@ -76,7 +76,7 @@ export default class Navbar extends Component {
 
     return (
       <div
-        className={`navbar ${closed
+        className={`navbar-old ${closed
           ? 'navbar--closed'
           : 'navbar--opened'} ${light ? 'navbar--light' : ''}`}
       >

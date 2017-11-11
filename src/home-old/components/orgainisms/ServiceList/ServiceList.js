@@ -6,7 +6,7 @@
 
 import { h, Component } from 'preact'
 
-import ServiceListItem from '@/home/components/molecules/ServiceListItem'
+import ServiceListItem from '@/home-old/components/molecules/ServiceListItem'
 
 // import TiLightbulb from 'preact-icons/lib/ti/lightbulb'
 import FaEmpire from 'preact-icons/lib/fa/empire'
