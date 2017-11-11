@@ -1,0 +1,18 @@
+@import 'colors.css';
+@import 'typography.css';
+
+.clients {
+  min-height: 86px;
+  height: auto;
+  width: 100%;
+  max-width: 1186px;
+  font-size: 24px;
+  font-family: var(--font-tisa-ot-lt);
+  text-align: center;
+  line-height: 1.8;
+
+  @media (max-width: 767px) {
+    font-size: 15px;
+    padding: 0 17px;
+  }
+}
