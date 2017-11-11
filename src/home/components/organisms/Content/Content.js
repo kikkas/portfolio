@@ -12,6 +12,8 @@ import imagesLoaded from 'imagesloaded'
 
 import Caption from '@/home/components/organisms/Caption'
 import CobaseFeatured from '@/home/components/organisms/CobaseFeatured'
+import LatestWork from '@/home/components/organisms/LatestWork'
+import Thoughts from '@/home/components/organisms/Thoughts'
 
 import './style.css'
 
@@ -21,6 +23,8 @@ export default class Content extends Component {
       <div className="home-page-content">
         <Caption />
         <CobaseFeatured />
+        <LatestWork />
+        <Thoughts />
       </div>
     )
   }

@@ -30,6 +30,11 @@
     font-size: 24px;
     font-family: var(--font-tisa-pro-rg);
     margin-bottom: 3px;
+
+    @media (max-width: 767px) {
+      height: 29px;
+      margin-bottom: 9px;
+    }
   }
 
   &__info {
@@ -41,6 +46,11 @@
     width: 100%;
     line-height: 1.5;
     margin-bottom: 31px;
+
+    @media (max-width: 767px) {
+      min-height: 44px;
+      margin-bottom: 16px;
+    }
   }
 
   &__link {
