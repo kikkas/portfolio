@@ -5,7 +5,6 @@
  */
 
 import { h, Component } from 'preact'
-import PropTypes from 'prop-types'
 
 import imageLgUrl from 'assets/img/cobase-project-image-2@2x.png'
 import imageMobileUrl_1 from 'assets/img/cobase-project-image-2-mobile@2x.png'

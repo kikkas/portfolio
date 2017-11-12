@@ -5,7 +5,6 @@
  */
 
 import { h, Component } from 'preact'
-import PropTypes from 'prop-types'
 
 import wifogImgUrl from 'assets/img/wifog-cms@2x.png'
 import wifogSmImgUrl from 'assets/img/wifog-cms-sm@2x.png'

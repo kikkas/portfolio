@@ -5,7 +5,6 @@
  */
 
 import { h, Component } from 'preact'
-import PropTypes from 'prop-types'
 import { Link } from 'preact-router/match'
 
 import imageUrl from 'assets/img/lunch-app@2x.png'
@@ -40,7 +39,7 @@ export default class Assistant extends Component {
           <div className="assistant__info__content">
             What it there is an app to make you lunches more fullfilling?
           </div>
-          <Link href="#" className="assistant__info__link">
+          <Link href="/wifog" className="assistant__info__link">
             See how this works
           </Link>
         </div>
