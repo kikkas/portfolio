@@ -1,0 +1,55 @@
+@import 'colors.css';
+@import 'typography.css';
+
+.wifog-top-block {
+  width: 100%;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 16px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 70px;
+    font-size: 48px;
+    font-family: var(--font-tisa-ot-lt);
+    letter-spacing: -0.2px;
+    margin-left: 80px;
+    transition: transform 500ms ease-in-out;
+
+
+    @media (max-width: 767px) {
+      font-size: 26px;
+      height: 38px;
+      margin-left: 16px;
+      padding-left: 17px;
+    }
+  }
+
+  &__platform {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 70px;
+    font-size: 48px;
+    font-family: var(--font-tisa-ot-lt);
+    color: var(--color-gray-light);
+    margin-left: 80px;
+    transition: transform 500ms ease-in-out;
+
+
+    @media (max-width: 767px) {
+      font-size: 26px;
+      height: 38px;
+      margin-left: 16px;
+      padding-left: 17px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 109px;
+  }
+}

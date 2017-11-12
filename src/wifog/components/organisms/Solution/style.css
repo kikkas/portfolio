@@ -1,0 +1,76 @@
+
+@import 'colors.css';
+@import 'typography.css';
+
+.solution{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 96px;
+    margin-bottom: 119px;
+    align-items: center;
+
+
+    &__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: 6rem;
+    margin-bottom: 6rem;
+    @media (max-width: 767px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 100vw;
+      margin-left: 0rem;
+    }
+
+
+      &__title {
+        display: flex;
+        text-align: left;
+        font-size: 36px;
+        font-family: var(--font-tisa-ot-lt);
+        line-height: 1.3;
+        width: 100%;
+        min-height: 54px;
+
+        @media (max-width: 767px) {
+          font-size: 24px;
+          width: 340px;
+          height: 58px;
+        }
+      }
+
+      &__description {
+        font-size: 20px;
+        font-family: var(--font-akagi-pro-lt);
+        display: flex;
+        text-align: left;
+        line-height: 1.4;
+        width: 400px;
+        height: 112px;
+        margin-bottom: 3rem;
+
+        @media (max-width: 767px) {
+          font-size: 16px;
+          width: 100%;
+          margin-bottom: 32px;
+        }
+      }
+    }
+
+    &__img{
+        width: 100vw;
+    }
+
+  @media (max-width: 767px) {
+    margin-top: 80px;
+    margin-bottom: 48px;
+  }
+
+
+}
