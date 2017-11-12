@@ -2,7 +2,7 @@
 @import 'typography.css';
 
 .cobase-featured {
-  width: 100%;
+  width: 100vw;
   margin-bottom: 160px;
 
   &__header {
