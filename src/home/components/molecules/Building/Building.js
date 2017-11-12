@@ -5,7 +5,6 @@
  */
 
 import { h, Component } from 'preact'
-import PropTypes from 'prop-types'
 import { Link } from 'preact-router/match'
 
 import './style.css'
@@ -39,7 +38,7 @@ export default class Building extends Component {
         <div className="building__info">
           Design of a platform that brings construction into today.
         </div>
-        <Link href="#" className="building__link">
+        <Link href="/cobase" className="building__link">
           See it here
         </Link>
       </div>

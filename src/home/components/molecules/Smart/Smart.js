@@ -5,7 +5,6 @@
  */
 
 import { h, Component } from 'preact'
-import PropTypes from 'prop-types'
 import { Link } from 'preact-router/match'
 
 import imageUrl from 'assets/img/wifog-cms@2x.png'
@@ -39,7 +38,7 @@ export default class Smart extends Component {
             How to make people convert their time into value while browsing
             internet?
           </div>
-          <Link href="#" className="smart__info__link">
+          <Link href="/wifog" className="smart__info__link">
             Find out here
           </Link>
         </div>

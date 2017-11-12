@@ -12,6 +12,10 @@ import PropTypes from 'prop-types'
 import Content from '@/home/components/organisms/Content'
 import Navbar from '@/home/components/organisms/Navbar'
 import Footer from '@/home/components/organisms/Footer'
+import Caption from '@/home/components/organisms/Caption'
+import CobaseFeatured from '@/home/components/organisms/CobaseFeatured'
+import LatestWork from '@/home/components/organisms/LatestWork'
+import Thoughts from '@/home/components/organisms/Thoughts'
 
 import './style.css'
 
@@ -28,7 +32,12 @@ export default class Home extends Component {
       <div className="home-page">
         <Helmet title="Martin Kikkas" />
         <Navbar title="About" link="/about" />
-        <Content />
+        <Content>
+          <Caption />
+          <CobaseFeatured />
+          <LatestWork />
+          <Thoughts />
+        </Content>
         <Footer />
       </div>
     )

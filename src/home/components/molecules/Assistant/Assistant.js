@@ -5,7 +5,6 @@
  */
 
 import { h, Component } from 'preact'
-import PropTypes from 'prop-types'
 import { Link } from 'preact-router/match'
 
 import imageUrl from 'assets/img/lunch-app@2x.png'

@@ -5,7 +5,6 @@
  */
 
 import { h, Component } from 'preact'
-import PropTypes from 'prop-types'
 
 import './style.css'
 
