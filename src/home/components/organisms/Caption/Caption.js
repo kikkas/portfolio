@@ -16,7 +16,7 @@ const Caption = () => (
       I solve problems using design thinking, distruptive technolgies and
       learnings from data and users.
     </div>
-    <Link href="#" className="about-me__my-story">
+    <Link href="/about" className="about-me__my-story">
       Read my story here
     </Link>
   </div>
