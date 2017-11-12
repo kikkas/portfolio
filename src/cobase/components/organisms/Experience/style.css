@@ -30,16 +30,18 @@
     display: flex;
     align-items: center;
     text-align: center;
-    width: 745px;
-    height: 168px;
+    width: 100%;
+    max-width: 745px;
+    min-height: 168px;
     font-size: 20px;
     line-height: 1.4;
     font-family: var(--font-akagi-pro-lt);
     margin-bottom: 56px;
 
     @media (max-width: 767px) {
-      width: 340px;
-      height: 220px;
+      max-width: 374px;
+      padding: 0 17px;
+      min-height: 220px;
       font-size: 16px;
       margin-bottom: 32px;
     }

@@ -20,8 +20,8 @@
 
     @media (max-width: 767px) {
       font-size: 24px;
-      width: 340px;
-      height: 58px;
+      max-width: 340px;
+      min-height: 58px;
     }
   }
 

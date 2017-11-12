@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0 80px;
-  margin-bottom: 101px;
+  padding-bottom: 81px;
 
   &__name {
     display: flex;
@@ -25,7 +25,9 @@
 
   &__list {
     display: flex;
+    width: 100%;
     flex-direction: row;
+    flex-wrap: wrap;
 
     &__elem {
       display: flex;
@@ -33,6 +35,7 @@
       margin-right: 32px;
       height: 22px;
       font-size: 16px;
+      margin-bottom: 20px;
       font-family: var(--font-akagi-pro-lt);
       color: var(--color-blue);
       background-color: var(--color-bg-link);
@@ -42,7 +45,7 @@
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 81px;
+    padding-bottom: 61px;
     padding: 0 20px;
   }
 }
