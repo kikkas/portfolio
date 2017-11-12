@@ -3,10 +3,11 @@
 
 .cobase-top-block {
   width: 100%;
-  margin-top: 160px;
+  padding-top: 160px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-bottom: 24px;
 
   &__header {
     display: flex;
@@ -43,6 +44,6 @@
   }
 
   @media (max-width: 767px) {
-    margin-top: 109px;
+    padding-top: 109px;
   }
 }
