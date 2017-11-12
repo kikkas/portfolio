@@ -1,0 +1,5 @@
+.cobase-cover {
+  &__video-block {
+    width: 100vw;
+  }
+}
