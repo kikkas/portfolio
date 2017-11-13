@@ -16,6 +16,7 @@ import Cobase from '@/cobase'
 import About from '@/about'
 import Old from '@/home-old'
 import Wifog from '@/wifog'
+import Lunch from '@/lunch'
 
 import initialState from '@/app/initialState'
 import { configureStore } from './store'
@@ -29,6 +30,7 @@ render(
         <Home path="/" />
         <Cobase path="/cobase" />
         <Wifog path="/wifog" />
+        <Lunch path="/lunch" />
         <About path="/about" />
         <Old path="/old" />
       </Router>

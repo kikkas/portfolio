@@ -1,0 +1,22 @@
+@import 'typography.css';
+
+.construction {
+  font-size: 20px;
+  font-family: var(--font-akagi-pro-lt);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 1.4;
+  width: 745px;
+  height: 112px;
+  margin-bottom: 99px;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    width: 100%;
+    max-width: 374px;
+    min-height: 154px;
+    margin-bottom: 32px;
+    padding: 0 17px;
+  }
+}
