@@ -1,7 +1,7 @@
 @import 'colors.css';
 @import 'typography.css';
 
-.footer {
+.footer-old {
   display: flex;
   flex-shrink: 0;
   margin-top: auto;

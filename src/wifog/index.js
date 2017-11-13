@@ -10,7 +10,7 @@ import Helmet from 'preact-helmet'
 import PropTypes from 'prop-types'
 
 import Content from '@/wifog/components/organisms/Content'
-import Navbar from '@/wifog/components/organisms/Navbar'
+import Navbar from '@/shared/components/Navbar'
 import TopBlock from '@/wifog/components/organisms/TopBlock'
 import Cover from '@/wifog/components/organisms/Cover'
 import Intro from '@/wifog/components/organisms/Intro'
@@ -20,7 +20,7 @@ import Solution from '@/wifog/components/organisms/Solution'
 import Credits from '@/wifog/components/organisms/Credits'
 import CreatingDeals from '@/wifog/components/organisms/CreatingDeals'
 import BeingTransparent from '@/wifog/components/organisms/BeingTransparent'
-import Footer from '@/wifog/components/organisms/Footer'
+import Footer from '@/shared/components/Footer'
 
 import './style.css'
 

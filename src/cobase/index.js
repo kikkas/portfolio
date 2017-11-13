@@ -10,7 +10,7 @@ import Helmet from 'preact-helmet'
 import PropTypes from 'prop-types'
 
 import Content from '@/cobase/components/organisms/Content'
-import Navbar from '@/cobase/components/organisms/Navbar'
+import Navbar from '@/shared/components/Navbar'
 import TopBlock from '@/cobase/components/organisms/TopBlock'
 import Cover from '@/cobase/components/organisms/Cover'
 import Reshaping from '@/cobase/components/organisms/Reshaping'
@@ -19,7 +19,7 @@ import Experience from '@/cobase/components/organisms/Experience'
 import DesignSystem from '@/cobase/components/organisms/DesignSystem'
 import ToolsUsed from '@/cobase/components/organisms/ToolsUsed'
 import OtherProjects from '@/cobase/components/organisms/OtherProjects'
-import Footer from '@/cobase/components/organisms/Footer'
+import Footer from '@/shared/components/Footer'
 
 import './style.css'
 

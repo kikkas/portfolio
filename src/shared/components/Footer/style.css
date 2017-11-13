@@ -1,7 +1,7 @@
 @import 'colors.css';
 @import 'typography.css';
 
-.wifog-footer {
+.footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
