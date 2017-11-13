@@ -2,7 +2,7 @@
 @import 'typography.css';
 
 .wifog-cover {
-  margin-top: 24px;
+  padding-top: 24px;
 
   &__video-block {
     width: 100vw;

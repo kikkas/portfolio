@@ -11,6 +11,15 @@ import PropTypes from 'prop-types'
 
 import Content from '@/wifog/components/organisms/Content'
 import Navbar from '@/wifog/components/organisms/Navbar'
+import TopBlock from '@/wifog/components/organisms/TopBlock'
+import Cover from '@/wifog/components/organisms/Cover'
+import Intro from '@/wifog/components/organisms/Intro'
+import ToolsUsed from '@/wifog/components/organisms/ToolsUsed'
+import OtherProjects from '@/wifog/components/organisms/OtherProjects'
+import Solution from '@/wifog/components/organisms/Solution'
+import Credits from '@/wifog/components/organisms/Credits'
+import CreatingDeals from '@/wifog/components/organisms/CreatingDeals'
+import BeingTransparent from '@/wifog/components/organisms/BeingTransparent'
 
 import './style.css'
 
@@ -27,7 +36,17 @@ export default class Wifog extends Component {
       <div className="wifog-page">
         <Helmet title="Martin Kikkas | Wifog" />
         <Navbar title="Back to homepage" link="/" />
-        <Content />
+        <Content>
+          <TopBlock />
+          <Cover />
+          <Intro />
+          <Solution />
+          <Credits />
+          {/*<CreatingDeals />
+          <BeingTransparent />
+          <ToolsUsed />
+          <OtherProjects />*/}
+        </Content>
       </div>
     )
   }
