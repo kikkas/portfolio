@@ -20,10 +20,8 @@ const Deals = () => (
         ourselves. This is something we felt needs to be clarified.
       </div>
     </div>
-    <div className="deals__background">
-      <div className="deals__wrapper">
-        <img src={imgUrlDeals} className="deals__img" />
-      </div>
+    <div className="deals__image">
+      <img src={imgUrlDeals} className="deals__image__img" />
     </div>
   </div>
 )

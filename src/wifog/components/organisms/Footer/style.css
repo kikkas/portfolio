@@ -1,0 +1,59 @@
+@import 'colors.css';
+@import 'typography.css';
+
+.wifog-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 80px;
+  width: 100%;
+  margin-bottom: 32px;
+
+  &__email {
+    color: var(--color-black);
+    font-family: var(--font-akagi-pro-bd);
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    height: 23px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      height: 28px;
+      margin-left: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+
+    &__col {
+      color: var(--color-black);
+      font-family: var(--font-akagi-pro-bd);
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      height: 23px;
+      margin-left: 28px;
+
+      @media (max-width: 767px) {
+        font-size: 20px;
+        height: 28px;
+        margin-left: 0;
+        margin-top: 32px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    margin-bottom: 65px;
+    padding: 0 20px;
+    align-items: center;
+  }
+}

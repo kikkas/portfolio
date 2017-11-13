@@ -4,7 +4,7 @@
 .solution {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   padding-top: 96px;
   padding-bottom: 119px;
 

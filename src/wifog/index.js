@@ -20,6 +20,7 @@ import Solution from '@/wifog/components/organisms/Solution'
 import Credits from '@/wifog/components/organisms/Credits'
 import CreatingDeals from '@/wifog/components/organisms/CreatingDeals'
 import BeingTransparent from '@/wifog/components/organisms/BeingTransparent'
+import Footer from '@/wifog/components/organisms/Footer'
 
 import './style.css'
 
@@ -42,11 +43,12 @@ export default class Wifog extends Component {
           <Intro />
           <Solution />
           <Credits />
-          {/*<CreatingDeals />
+          <CreatingDeals />
           <BeingTransparent />
           <ToolsUsed />
-          <OtherProjects />*/}
+          <OtherProjects />
         </Content>
+        <Footer />
       </div>
     )
   }
