@@ -12,7 +12,7 @@ import './style.css'
 
 const Cover = () => (
   <div className="cobase-cover">
-    <video src={videoUrl} className="cobase-cover__video-block" autoPlay />
+    <video src={videoUrl} className="cobase-cover__video-block" autoPlay loop />
   </div>
 )
 
