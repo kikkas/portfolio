@@ -64,7 +64,8 @@
   }
 
   &__image-block {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1200px;
 
     @media (max-width: 767px) {
       margin-bottom: 24px;

@@ -8,8 +8,7 @@ import { h, Component } from 'preact'
 import PropTypes from 'prop-types'
 import { Link } from 'preact-router/match'
 
-import imageUrl from 'assets/img/cobase-featured@2x.png'
-import imageSmUrl from 'assets/img/cobase-featured-mobile@2x.png'
+import videoUrl from 'assets/video/cobase-cover-video-2.mp4'
 import Building from '@/home/components/molecules/Building'
 
 import './style.css'
@@ -43,15 +42,19 @@ export default class CobaseFeatured extends Component {
           {this.state.windowWidth > 767 ? (
             <div className="cobase-featured__graphics__building">
               <Building />
-              <img
-                src={imageUrl}
-                className="cobase-featured__graphics__building__image"
+              <video
+                src={videoUrl}
+                className="cobase-featured__graphics__building__video"
+                autoPlay
+                loop
               />
             </div>
           ) : (
-            <img
-              src={imageSmUrl}
-              className="cobase-featured__graphics__image"
+            <video
+              src={videoUrl}
+              className="cobase-featured__graphics__video"
+              autoPlay
+              loop
             />
           )}
         </div>
