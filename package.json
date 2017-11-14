@@ -19,6 +19,7 @@
   "dependencies": {
     "eases": "1.0.8",
     "gsap": "1.20.3",
+    "history": "4.7.2",
     "imagesloaded": "4.1.3",
     "jquery": "3.2.1",
     "lodash": "4.17.4",
@@ -29,6 +30,7 @@
     "preact-icons": "2.2.5",
     "preact-redux": "2.0.3",
     "preact-router": "2.5.7",
+    "preact-router-redux": "4.1.0",
     "prop-types": "15.6.0",
     "redux": "3.7.2",
     "redux-thunk": "2.2.0",

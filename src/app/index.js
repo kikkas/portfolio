@@ -20,12 +20,31 @@ import Wifog from '@/wifog'
 import initialState from '@/app/initialState'
 import { configureStore } from './store'
 
+import createBrowserHistory from 'history/createBrowserHistory'
+import { syncHistoryWithStore } from 'preact-router-redux'
+
 const store = configureStore(initialState)
+
+const browserHistory = createBrowserHistory()
+
+const history = syncHistoryWithStore(browserHistory, store)
+
+history.listen(location => {
+  setTimeout(() => {
+    $('body').animate({ scrollTop: 0 }, 300)
+  }, 0)
+})
 
 render(
   <Provider store={store}>
     <App>
-      <Router>
+      <Router
+        history={history}
+        onUpdate={() => {
+          console.log('here')
+          window.scrollTo(0, 0)
+        }}
+      >
         <Home path="/" />
         <Cobase path="/cobase" />
         <Wifog path="/wifog" />

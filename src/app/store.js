@@ -12,10 +12,12 @@ import thunkMiddleware from 'redux-thunk'
 // import loggerMiddleware from '@/app/middlewares/logger'
 
 import appReducer from '@/app/reducer'
+import { routerReducer } from 'preact-router-redux'
 
 const rootReducer = combineReducers({
   app: appReducer,
   projects: (state = {}) => state,
+  routing: routerReducer,
 })
 
 const composeEnhancers = composeWithDevTools({
