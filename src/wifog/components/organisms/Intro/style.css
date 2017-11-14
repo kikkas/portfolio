@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 96px;
-  margin-bottom: 119px;
+  padding-top: 96px;
+  padding-bottom: 119px;
   width: 100%;
   max-width: 750px;
 
@@ -32,22 +32,21 @@
     display: flex;
     text-align: left;
     line-height: 1.4;
-    width: 745px;
+    max-width: 745px;
     height: 112px;
     margin-bottom: 3rem;
 
     @media (max-width: 767px) {
       font-size: 16px;
-      width: 340px;
+      max-width: 340px;
       height: 154px;
       margin-bottom: 32px;
     }
   }
 
   &__img {
-      width: 100vw;
+    width: 100vw;
   }
-
 
   &__content {
     display: flex;
@@ -58,19 +57,17 @@
   }
 
   @media (max-width: 767px) {
-    margin-top: 80px;
-    margin-bottom: 48px;
+    padding-top: 80px;
+    padding-bottom: 48px;
   }
-
-
 }
 
 .wrapper-process {
-    width: 100%;
-    @media (max-width: 767px) {
-      width: auto;
-    }
+  width: 100%;
 
+  @media (max-width: 767px) {
+    width: auto;
+  }
 }
 
 .design-process {

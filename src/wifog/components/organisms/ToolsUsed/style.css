@@ -1,7 +1,7 @@
 @import 'colors.css';
 @import 'typography.css';
 
-.tools-used {
+.wifog-tools-used {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -26,6 +26,7 @@
   &__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     &__elem {
       display: flex;
@@ -38,6 +39,7 @@
       background-color: var(--color-bg-link);
       border-radius: 10px;
       padding: 0 10px;
+      margin-bottom: 20px;
     }
   }
 

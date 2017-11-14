@@ -18,8 +18,8 @@ export default class Cover extends Component {
         <video
           src={videoUrl}
           className="wifog-cover__video-block"
-          autoPlay={true}
-          loop={true}
+          autoPlay
+          loop
         />
       </div>
     )

@@ -8,7 +8,7 @@ import { h, Component } from 'preact'
 import { connect } from 'preact-redux'
 import Helmet from 'preact-helmet'
 
-import Navbar from '@/home/components/organisms/Navbar'
+import Navbar from '@/shared/components/Navbar'
 import AboutMartin from '@/about/components/organisms/AboutMartin'
 
 import './style.css'
