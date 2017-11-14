@@ -17,6 +17,7 @@ const Solution = () => (
       <div className="solution__info__description">
         In order to faciliatet this kind a content we use swipeable card models.
         Based on user interactions we can decide what card to show and what not.
+        It coulbe be easier to predict what to show next and what not.
       </div>
     </div>
     <div className="solution__wrapper">
