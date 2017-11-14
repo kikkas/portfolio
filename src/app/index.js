@@ -30,9 +30,7 @@ const browserHistory = createBrowserHistory()
 const history = syncHistoryWithStore(browserHistory, store)
 
 history.listen(location => {
-  setTimeout(() => {
-    $('body').animate({ scrollTop: 0 }, 300)
-  }, 0)
+  $('body').animate({ scrollTop: 0 }, 0)
 })
 
 render(
