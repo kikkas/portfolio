@@ -68,11 +68,11 @@
     }
   }
 
-  &__image-block {
+  &__video-block {
     flex: 1;
     width: 100%;
 
-    &__image {
+    &__video {
       width: 100%;
     }
 

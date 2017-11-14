@@ -16,7 +16,9 @@ export default class Navbar extends Component {
     const { title, link } = this.props
     return (
       <div className="navbar">
-        <div className="navbar__logo">Martin Kikkas</div>
+        <Link href="/" className="navbar__logo">
+          Martin Kikkas
+        </Link>
         <div className="navbar__content">
           <Link className="navbar__content__link" href={link}>
             {title}

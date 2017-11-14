@@ -7,49 +7,33 @@
 import { h, Component } from 'preact'
 import { Link } from 'preact-router/match'
 
-import imageUrl from 'assets/img/wifog-cms@2x.png'
-import imageSmUrl from 'assets/img/wifog-cms-sm@2x.png'
+import videoUrl from 'assets/video/cobase-cover-video-2.mp4'
 
 import './style.css'
 
-export default class Smart extends Component {
-  state = {
-    windowWidth: window.innerWidth,
-  }
-
-  componentWillMount() {
-    window.addEventListener('resize', this._saveWindowWidth)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this._saveWindowWidth)
-  }
-
-  _saveWindowWidth = () => {
-    this.setState({ windowWidth: window.innerWidth })
-  }
-
-  render() {
-    return (
-      <div className="smart">
-        <div className="smart__info">
-          <div className="smart__info__header">Consume smart on internet</div>
-          <div className="smart__info__content">
-            How to make people convert their time into value while browsing
-            internet?
-          </div>
-          <Link href="/wifog" className="smart__info__link">
-            Find out here
-          </Link>
-        </div>
-        <div className="smart__image-block">
-          {this.state.windowWidth > 767 ? (
-            <img className="smart__image-block__image" src={imageUrl} />
-          ) : (
-            <img className="smart__image-block__image" src={imageSmUrl} />
-          )}
-        </div>
+const Smart = () => (
+  <div className="smart">
+    <div className="smart__info">
+      <div className="smart__info__header">Consume smart on internet</div>
+      <div className="smart__info__content">
+        How to make people convert their time into value while browsing
+        internet?
       </div>
-    )
-  }
-}
+      <Link href="/cobase" className="smart__info__link">
+        Find out here
+      </Link>
+    </div>
+    <div className="smart__video-block">
+      <Link href="/cobase">
+        <video
+          src={videoUrl}
+          className="assistant__video-block__video"
+          autoPlay
+          loop
+        />
+      </Link>
+    </div>
+  </div>
+)
+
+export default Smart
