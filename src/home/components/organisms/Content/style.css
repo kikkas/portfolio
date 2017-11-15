@@ -6,4 +6,9 @@
   position: relative;
   width: 100%;
   height: auto;
+
+  &--preloader-is-visible {
+    height: 100vh;
+    overflow: hidden;
+  }
 }

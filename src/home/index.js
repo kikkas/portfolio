@@ -9,13 +9,8 @@ import { connect } from 'preact-redux'
 import Helmet from 'preact-helmet'
 import PropTypes from 'prop-types'
 
-import Content from '@/home/components/organisms/Content'
 import Navbar from '@/shared/components/Navbar'
-import Footer from '@/shared/components/Footer'
-import Caption from '@/home/components/organisms/Caption'
-import CobaseFeatured from '@/home/components/organisms/CobaseFeatured'
-import LatestWork from '@/home/components/organisms/LatestWork'
-import Thoughts from '@/home/components/organisms/Thoughts'
+import Content from '@/home/components/organisms/Content'
 
 import './style.css'
 
@@ -31,14 +26,10 @@ export default class Home extends Component {
     return (
       <div className="home-page">
         <Helmet title="Martin Kikkas" />
+
         <Navbar title="About" link="/about" />
-        <Content>
-          <Caption />
-          <CobaseFeatured />
-          <LatestWork />
-          <Thoughts />
-        </Content>
-        <Footer />
+
+        <Content preloader />
       </div>
     )
   }
