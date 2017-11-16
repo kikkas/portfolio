@@ -8,6 +8,8 @@ import { h, render } from 'preact'
 import { Provider } from 'preact-redux'
 import Router from 'preact-router'
 
+import '../../.htaccess'
+
 import '@/app/css/main.css'
 
 import App from '@/app/container'
