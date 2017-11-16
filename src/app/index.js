@@ -16,6 +16,7 @@ import Cobase from '@/cobase'
 import About from '@/about'
 import Old from '@/home-old'
 import Wifog from '@/wifog'
+import ScrollStub from '@/shared/components/ScrollStub'
 
 import initialState from '@/app/initialState'
 import { configureStore } from './store'
@@ -29,10 +30,6 @@ const browserHistory = createBrowserHistory()
 
 const history = syncHistoryWithStore(browserHistory, store)
 
-history.listen(location => {
-  $('body').animate({ scrollTop: 0 }, 0)
-})
-
 render(
   <Provider store={store}>
     <App>
@@ -43,11 +40,25 @@ render(
           window.scrollTo(0, 0)
         }}
       >
-        <Home path="/" />
-        <Cobase path="/cobase" />
-        <Wifog path="/wifog" />
-        <About path="/about" />
-        <Old path="/old" />
+        <ScrollStub path="/">
+          <Home />
+        </ScrollStub>
+
+        <ScrollStub path="/cobase">
+          <Cobase />
+        </ScrollStub>
+
+        <ScrollStub path="/wifog">
+          <Wifog />
+        </ScrollStub>
+
+        <ScrollStub path="/about">
+          <About />
+        </ScrollStub>
+
+        <ScrollStub path="/old">
+          <Old />
+        </ScrollStub>
       </Router>
     </App>
   </Provider>,
