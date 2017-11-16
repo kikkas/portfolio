@@ -10,7 +10,7 @@ import { Link } from 'preact-router/match'
 import './style.css'
 
 const Footer = () => (
-  <div className="footer">
+  <div className="footer wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <Link href="#" className="footer__email">
       Email me
     </Link>

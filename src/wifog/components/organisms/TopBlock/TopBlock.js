@@ -12,7 +12,7 @@ import './style.css'
 export default class TopBlock extends Component {
   render() {
     return (
-      <div className="wifog-top-block">
+      <div className="wifog-top-block wow fadeIn">
         <div className="wifog-top-block__header">
           Wifog - consume smartly on internet
         </div>

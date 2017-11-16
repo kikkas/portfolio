@@ -9,7 +9,7 @@ import { h, Component } from 'preact'
 import './style.css'
 
 const ToolsUsed = () => (
-  <div className="wifog-tools-used">
+  <div className="wifog-tools-used wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="wifog-tools-used__name">Tools used:</div>
     <div className="wifog-tools-used__list">
       <div href="#" className="wifog-tools-used__list__elem">

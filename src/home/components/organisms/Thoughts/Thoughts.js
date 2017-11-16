@@ -10,7 +10,7 @@ import { Link } from 'preact-router/match'
 import './style.css'
 
 const Thoughts = () => (
-  <div className="thoughts">
+  <div className="thoughts wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="thoughts__self-driving">
       <div className="thoughts__self-driving__caption">My latest thoughts</div>
       <div className="thoughts__self-driving__header">

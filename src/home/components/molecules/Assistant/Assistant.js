@@ -12,7 +12,7 @@ import videoUrl from 'assets/video/lunch-cover.mp4'
 import './style.css'
 
 const Assistant = () => (
-  <div className="assistant">
+  <div className="assistant wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="assistant__info">
       <div className="assistant__info__header">
         Say hello to lunch assistant
@@ -25,7 +25,7 @@ const Assistant = () => (
       </Link>
     </div>
     <div className="assistant__video-block">
-      <Link href="/wifog">
+      <Link href="/wifog" className="assistant__link">
         <video
           src={videoUrl}
           className="assistant__video-block__video"

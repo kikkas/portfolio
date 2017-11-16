@@ -1,0 +1,67 @@
+.animation{
+    &:before{
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         right: 0;
+         -webkit-animation: bgWhite 4.5s, bgWhiteMove 3s 4.5s;
+         -o-animation: bgWhite 4.5s, bgWhiteMove 3s 4.5s;
+         animation: bgWhite 4.5s, bgWhiteMove 3s 4.5s;
+    }
+    &:after{
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         right: 0;
+         -webkit-animation: bgBlueMove 3s 4.5s;
+         -o-animation: bgBlueMove 3s 4.5s;
+         animation: bgBlueMove 3s 4.5s;
+    }
+    &__text{
+         position: fixed;
+         top: 50%;
+         left: 50%;
+         -webkit-transform: translateX(-50%) translateY(-50%);
+         -moz-transform: translateX(-50%) translateY(-50%);
+         -ms-transform: translateX(-50%) translateY(-50%);
+         -o-transform: translateX(-50%) translateY(-50%);
+         transform: translateX(-50%) translateY(-50%);
+         opacity: 0;
+         font-family: 'Tisa-OT-Light';
+         font-size: 25px;
+         text-align: center;
+         -webkit-animation: moveText 5.5s;
+         -o-animation: moveText 5.5s;
+         animation: moveText 5.5s;
+    }
+}
+
+@-webkit-keyframes moveText {
+    0%   {top: 50%; opacity: 0}
+    25%   {top: 50%; opacity: 0}
+    40%   {top: 50%; opacity: 1; z-index: 120;}
+    60%   {top: 50%; opacity: 1; z-index: 120;}
+    100% {top: -100%; opacity: 0;}
+}
+
+@-webkit-keyframes bgWhite {
+    0%   {top: 0; bottom: 0; background-color: #fff; z-index: 110; opacity: 1}
+    50% {top: 0; bottom: 0; background-color: #fff; z-index: 110; opacity: 1}
+    100% {top: 0; bottom: 0; background-color: #fff; z-index: 110; opacity: 1}
+}
+
+@-webkit-keyframes bgWhiteMove {
+    0%   {top: 0; bottom: 0; background-color: #fff; z-index: 110; opacity: 1}
+    50% {top: 0; bottom: 0; background-color: #fff; z-index: 110; opacity: 1}
+    100% {top: 0; bottom: 0; background-color: #fff; z-index: 110; opacity: 0}
+}
+
+@-webkit-keyframes bgBlueMove {
+    0%   {top: 100%; bottom: 0; background-color: #2A78C3; z-index: 120}
+    50% {top: 0; bottom: 0; background-color: #2A78C3; z-index: 120}
+    100% {top: 0; bottom: 100%; background-color: #2A78C3; z-index: 120}
+}

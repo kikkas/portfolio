@@ -30,7 +30,7 @@ const browserHistory = createBrowserHistory()
 const history = syncHistoryWithStore(browserHistory, store)
 
 history.listen(location => {
-  $('body').animate({ scrollTop: 0 }, 0)
+  window.scrollTo(0, 0); // scroll to top on render
 })
 
 render(

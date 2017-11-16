@@ -14,7 +14,7 @@ import './style.css'
 export default class Cover extends Component {
   render() {
     return (
-      <div className="wifog-cover">
+      <div className="wifog-cover wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
         <video
           src={videoUrl}
           className="wifog-cover__video-block"

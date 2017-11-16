@@ -11,7 +11,7 @@ import imageUrl from 'assets/img/cobase-project-image-4@2x.png'
 import './style.css'
 
 const Resources = () => (
-  <div className="resources">
+  <div className="resources wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="resources__info">
       <div className="resources__info__header">Maxing out resources</div>
       <div className="resources__info__content">

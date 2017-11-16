@@ -9,7 +9,7 @@ import { h, Component } from 'preact'
 import './style.css'
 
 const TopBlock = () => (
-  <div className="cobase-top-block">
+  <div className="cobase-top-block wow fadeIn">
     <div className="cobase-top-block__header">
       Cobase - building on steroids
     </div>

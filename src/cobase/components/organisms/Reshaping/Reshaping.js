@@ -13,7 +13,7 @@ import Mistakes from '@/cobase/components/molecules/Mistakes'
 import './style.css'
 
 const Reshaping = () => (
-  <div className="cobase-reshaping">
+  <div className="cobase-reshaping wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="cobase-reshaping__header">
       Reshaping hardest heavyiest industries of them all
     </div>

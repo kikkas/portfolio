@@ -22,6 +22,9 @@
     &__building {
       width: 100%;
       position: relative;
+       -webkit-animation:  scaleBlock 1.5s;
+       -o-animation:  scaleBlock 1.5s;
+       animation:  scaleBlock 1.5s;
 
       &__video {
         width: 100vw;
