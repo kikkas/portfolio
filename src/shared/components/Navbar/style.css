@@ -3,21 +3,24 @@
 
 .navbar {
   width: 100%;
-  max-width: 1280px;
   height: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
-  padding: 0 80px;
   background-color: var(--color-white);
 
-  @media (min-width: 1281px) {
-    left: calc((100vw - 1280px) / 2);
+  &__nested-content {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    position: relative;
   }
 
   &__logo {
