@@ -3,6 +3,7 @@
 
 .navbar {
   width: 100%;
+  max-width: 1280px;
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -14,6 +15,10 @@
   left: 0;
   padding: 0 80px;
   background-color: var(--color-white);
+
+  @media (min-width: 1281px) {
+    left: calc((100vw - 1280px) / 2);
+  }
 
   &__logo {
     display: flex;
