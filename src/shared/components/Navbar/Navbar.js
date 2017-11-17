@@ -16,13 +16,15 @@ export default class Navbar extends Component {
     const { title, link } = this.props
     return (
       <div className="navbar">
-        <Link href="/" className="navbar__logo">
-          Martin Kikkas
-        </Link>
-        <div className="navbar__content">
-          <Link className="navbar__content__link" href={link}>
-            {title}
+        <div className="navbar__nested-content">
+          <Link href="/" className="navbar__logo">
+            Martin Kikkas
           </Link>
+          <div className="navbar__content">
+            <Link className="navbar__content__link" href={link}>
+              {title}
+            </Link>
+          </div>
         </div>
       </div>
     )
