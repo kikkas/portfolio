@@ -89,6 +89,18 @@ module.exports = {
       },
 
       {
+        test: /\.htaccess$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '.htaccess',
+            },
+          },
+        ],
+      },
+
+      {
         test: /\.ogg$/,
         use: [
           {

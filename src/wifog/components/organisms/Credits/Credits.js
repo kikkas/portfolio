@@ -11,7 +11,7 @@ import imgUrlCredits from 'assets/img/wifog-project-image-2@2x.png'
 import './style.css'
 
 const Credits = () => (
-  <div className="credits">
+  <div className="credits wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="credits__info">
       <div className="credits__info__title">Working with credits</div>
       <div className="credits__info__description">

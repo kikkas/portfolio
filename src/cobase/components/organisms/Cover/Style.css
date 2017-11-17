@@ -1,5 +1,8 @@
 .cobase-cover {
-  &__video-block {
-    width: 100vw;
-  }
+&__video-block {
+   width: 100vw;
+   -webkit-animation:  scaleBlock 1.5s;
+   -o-animation:  scaleBlock 1.5s;
+   animation:  scaleBlock 1.5s;
+ }
 }

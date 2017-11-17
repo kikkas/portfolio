@@ -11,7 +11,7 @@ import imgUrlSolution3 from 'assets/img/whiteoverlay-7.png'
 import './style.css'
 
 const Solution = () => (
-  <div className="solution">
+  <div className="solution wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="solution__info">
       <div className="solution__info__title">Solution</div>
       <div className="solution__info__description">

@@ -11,7 +11,7 @@ import MobileGraphik from '@/cobase/components/molecules/MobileGraphik'
 import './style.css'
 
 const CreatingOnMobile = () => (
-  <div className="mobile">
+  <div className="mobile wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="mobile__header">Creating issues fast on mobile</div>
     <div className="mobile__content">
       It is easy to cluster UI with a lot of unneccessary things when it comes

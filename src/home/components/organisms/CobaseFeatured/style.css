@@ -23,12 +23,12 @@
       width: 100%;
       position: relative;
 
-      &__image {
+      &__video {
         width: 100vw;
       }
     }
 
-    &__image {
+    &__video {
       width: 100vw;
     }
   }

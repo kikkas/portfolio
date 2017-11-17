@@ -11,7 +11,7 @@ import DesignAtoms from '@/cobase/components/molecules/DesignAtoms'
 import './style.css'
 
 const DesignSystem = () => (
-  <div className="design-system">
+  <div className="design-system wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="design-system__info">
       <div className="design-system__info__header">
         Building a design system for buildings

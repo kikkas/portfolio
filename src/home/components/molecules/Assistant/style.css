@@ -68,16 +68,23 @@
     }
   }
 
-  &__image-block {
+  &__video-block {
     flex: 1;
     width: 100%;
 
-    &__image {
+    &__video {
       width: 100%;
     }
 
     @media (max-width: 767px) {
       margin-bottom: 31px;
+    }
+  }
+
+  &__link{
+    &:before,
+    &:after{
+     content: none;
     }
   }
 

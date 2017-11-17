@@ -11,7 +11,7 @@ import imgUrlDeals from 'assets/img/wifog-cms-2.png'
 import './style.css'
 
 const Deals = () => (
-  <div className="deals">
+  <div className="deals wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="deals__info">
       <div className="deals__info__title">Creating deals</div>
       <div className="deals__info__description">
