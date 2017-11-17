@@ -12,7 +12,7 @@ import Resources from '@/cobase/components/molecules/Resources'
 import './style.css'
 
 const Experience = () => (
-  <div className="experience">
+  <div className="experience wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="experience__header">Tailored experience</div>
     <div className="experience__info">
       For user one of the main views is task manager view that gives them

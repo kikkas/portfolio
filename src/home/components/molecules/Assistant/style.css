@@ -81,6 +81,13 @@
     }
   }
 
+  &__link{
+    &:before,
+    &:after{
+     content: none;
+    }
+  }
+
   @media (max-width: 1024px) {
     padding: 0 20px 0 20px;
   }

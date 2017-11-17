@@ -10,7 +10,7 @@ import { Link } from 'preact-router/match'
 import './style.css'
 
 const Caption = () => (
-  <div className="about-me">
+  <div className="about-me wow fadeIn">
     <div className="about-me__header">I design product experiences</div>
     <div className="about-me__info">
       I solve problems using design thinking, distruptive technolgies and

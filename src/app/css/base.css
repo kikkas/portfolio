@@ -11,20 +11,18 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   min-width: 320px;
 }
 
 body {
-  position: fixed;
   color: var(--color-black);
   background-color: var(--color-white);
   font-family: var(--font-heebo-md);
   box-sizing: border-box;
 
-  & *,
-  & *::before,
-  & *::after {
+& *,
+& *::before,
+& *::after {
     box-sizing: inherit;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -36,6 +34,7 @@ body {
 }
 
 a {
+  position: relative;
   text-decoration: none;
 }
 
@@ -49,14 +48,43 @@ a {
 }
 
 .main-container {
+  position: relative;
   display: flex;
   justify-content: center;
 }
 
 h1 {
-    font-family: var(--font-tisa-ot-lt);
-    font-size: 48px;
-    letter-spacing: -0.1px;
-    color: #000;
-    text-align: left;
+  font-family: var(--font-tisa-ot-lt);
+  font-size: 48px;
+  letter-spacing: -0.1px;
+  color: #000;
+  text-align: left;
+}
+
+a:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 3px;
+  right: 0;
+  background: #2A78C3;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+a:hover:after{
+  width: 100%;
+  left: 0;
+  background: #2A78C3;
+}
+
+@-webkit-keyframes scaleBlock {
+  0%   {transform: scaleY(0.8)}
+  100% {transform: scaleY(1)}
+}
+
+@keyframes scaleBlock {
+  0%   {transform: scaleY(0.8)}
+  100% {transform: scaleY(1)}
 }

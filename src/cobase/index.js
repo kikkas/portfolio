@@ -9,6 +9,9 @@ import { connect } from 'preact-redux'
 import Helmet from 'preact-helmet'
 import PropTypes from 'prop-types'
 
+import 'animate.css/animate.min.css'
+import WOW from 'wowjs';
+
 import Content from '@/cobase/components/organisms/Content'
 import Navbar from '@/shared/components/Navbar'
 import TopBlock from '@/cobase/components/organisms/TopBlock'
@@ -29,6 +32,12 @@ import './style.css'
 export default class Cobase extends Component {
   static propTypes = {
     projects: PropTypes.object,
+  }
+
+  componentDidMount() {
+      new WOW.WOW({
+          live: false
+      }).init();
   }
 
   render() {

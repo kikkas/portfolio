@@ -9,7 +9,7 @@ import { h, Component } from 'preact'
 import './style.css'
 
 const Clients = () => (
-  <div className="clients">
+  <div className="clients wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     Portfolio contains latest work only. Over the time I have worked with
     clients{' '}
     <strong>

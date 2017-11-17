@@ -11,7 +11,7 @@ import imageUrl from 'assets/img/cobase-project-image-3@2x.png'
 import './style.css'
 
 const Overview = () => (
-  <div className="overview">
+  <div className="overview wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="overview__info">
       <div className="overview__info__header">Good overview</div>
       <div className="overview__info__content">

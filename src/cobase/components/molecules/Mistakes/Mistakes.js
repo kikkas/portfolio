@@ -11,7 +11,7 @@ import imageUrl from 'assets/img/cobase-project-image-1@2x.png'
 import './style.css'
 
 const Mistakes = () => (
-  <div className="mistakes">
+  <div className="mistakes wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="mistakes__image-block">
       <img className="mistakes__image-block__image" src={imageUrl} />
     </div>
