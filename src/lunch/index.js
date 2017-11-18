@@ -10,7 +10,7 @@ import Helmet from 'preact-helmet'
 import PropTypes from 'prop-types'
 
 import Content from '@/lunch/components/organisms/Content'
-import Navbar from '@/lunch/components/organisms/Navbar'
+import Navbar from '@/shared/components/Navbar'
 import TopBlock from '@/lunch/components/organisms/TopBlock'
 import Cover from '@/lunch/components/organisms/Cover'
 import Reshaping from '@/lunch/components/organisms/Reshaping'

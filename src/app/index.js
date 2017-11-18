@@ -18,6 +18,7 @@ import Cobase from '@/cobase'
 import About from '@/about'
 import Old from '@/home-old'
 import Wifog from '@/wifog'
+import Lunch from '@/lunch'
 import ScrollStub from '@/shared/components/ScrollStub'
 
 import initialState from '@/app/initialState'
@@ -56,6 +57,10 @@ render(
 
         <ScrollStub path="/about">
           <About />
+        </ScrollStub>
+
+        <ScrollStub path="/lunch">
+          <Lunch />
         </ScrollStub>
 
         <ScrollStub path="/old">
