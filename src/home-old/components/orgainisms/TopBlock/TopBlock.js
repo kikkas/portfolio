@@ -15,9 +15,9 @@ import easeOutQuart from 'eases/quart-out'
 // import easeInQuint from 'eases/quint-in'
 import easeInOutSine from 'eases/sine-in-out'
 
-import videoUrl_1 from 'assets/video/1.mp4'
-import videoUrl_2 from 'assets/video/2.mp4'
-import videoUrl_3 from 'assets/video/3.mp4'
+import videoUrl_1 from 'assets/video/cobase-cover-small-test.mp4'
+import videoUrl_2 from 'assets/video/cobase-cover-small-test.mp4'
+import videoUrl_3 from 'assets/video/cobase-cover-small-test.mp4'
 
 const videos = [videoUrl_1, videoUrl_2, videoUrl_3]
 

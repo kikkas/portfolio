@@ -6,7 +6,6 @@
 
 import { h, Component } from 'preact'
 
-import videoUrl from 'assets/video/lunch-cover.mp4'
 import videoUrl2 from 'assets/video/cobase-cover-small-test.mp4'
 
 
