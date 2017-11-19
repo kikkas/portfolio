@@ -1,6 +1,6 @@
 /*
  *
- * BrowsingInternet
+ * Cobase
  *
  */
 
@@ -13,7 +13,7 @@ import { Link } from 'preact-router/match'
 
 import './style.css'
 
-export default class BrowsingInternet extends Component {
+export default class Cobase extends Component {
   state = {
     windowWidth: window.innerWidth,
   }
@@ -42,13 +42,13 @@ export default class BrowsingInternet extends Component {
         </div>
         <div className="browsing__info">
           <div className="browsing__info__header">
-            Building a building 2.0
+            Building 2.0
           </div>
           <div className="browsing__info__content">
-            Design of a platform that brings construction into today.
+            Construction site productivity tool where managers can have control over tasks and workforce.
           </div>
-          <Link href="#" className="browsing__info__link">
-            Find out here
+          <Link href="/cobase" className="browsing__info__link">
+            See it here
           </Link>
         </div>
       </div>

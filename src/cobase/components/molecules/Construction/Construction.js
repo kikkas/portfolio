@@ -10,11 +10,11 @@ import './style.css'
 
 const Construction = () => (
   <div className="construction">
-    Construction is one of the oldest and most conservative industries as you
-    might be expecting. Despite of that we build using materials and tools that
-    tens of times faster and efficiant, except one - the process how people work
-    together. That is where Cobase was born - change the way how poeple work
-    together on construction sites.
+  The construction industry is one of the oldest and most conservative
+   industries that hasn’t gone through a digital transformation. Tools
+   and materials have been improved a lot over a time, but the process
+   has stayed the same. That was the problem to solve with Cobase - to create
+   a better way for people to work together on construction sites.
   </div>
 )
 

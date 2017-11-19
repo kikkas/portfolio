@@ -13,11 +13,12 @@ import './style.css'
 const Deals = () => (
   <div className="deals wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="deals__info">
-      <div className="deals__info__title">Creating deals</div>
+      <div className="deals__info__title">CMS for partners</div>
       <div className="deals__info__description">
-        Early on when we did our user test we found out that people do not
-        understand where does the money come from and how much we take
-        ourselves. This is something we felt needs to be clarified.
+      As majority of the deals are created by partners it becomes important
+      to have a tool to create and target them to the right user groups.
+      CMS will help partners to set up a campaign, use their visual materials
+      and send it to their target audience.
       </div>
     </div>
     <div className="deals__image">

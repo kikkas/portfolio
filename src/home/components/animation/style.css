@@ -17,9 +17,9 @@
          left: 0;
          bottom: 0;
          right: 0;
-         -webkit-animation: bgBlueMove 3s 4.5s;
-         -o-animation: bgBlueMove 3s 4.5s;
-         animation: bgBlueMove 3s 4.5s;
+         -webkit-animation: bgBlueMove 4s 4.5s;
+         -o-animation: bgBlueMove 4s 4.5s;
+         animation: bgBlueMove 4s 4.5s;
     }
     &__text{
          position: fixed;

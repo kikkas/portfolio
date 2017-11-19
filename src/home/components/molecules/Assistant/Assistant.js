@@ -7,7 +7,7 @@
 import { h, Component } from 'preact'
 import { Link } from 'preact-router/match'
 
-import videoUrl from 'assets/video/lunch-cover.mp4'
+import imgUrl from 'assets/img/wifog-cms@2x.png'
 
 import './style.css'
 
@@ -15,23 +15,18 @@ const Assistant = () => (
   <div className="assistant wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="assistant__info">
       <div className="assistant__info__header">
-        Say hello to lunch assistant
+        Lunch assistant
       </div>
       <div className="assistant__info__content">
-        What it there is an app to make you lunches more fullfilling?
+      Design for an AI based chatbot to make lunch experience more fulfilling and spontaneous.
       </div>
-      <Link href="/wifog" className="assistant__info__link">
-        See how this works
+      <Link href="/lunch" className="assistant__info__link">
+        See it here
       </Link>
     </div>
     <div className="assistant__video-block">
-      <Link href="/wifog" className="assistant__link">
-        <video
-          src={videoUrl}
-          className="assistant__video-block__video"
-          autoPlay
-          loop
-        />
+      <Link href="/lunch" className="assistant__link">
+        <img className="assistant__video-block__video" src={imgUrl} />
       </Link>
     </div>
   </div>

@@ -13,15 +13,15 @@ import './style.css'
 
 const Experience = () => (
   <div className="experience wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div className="experience__header">Tailored experience</div>
+    <div className="experience__header">Relevant experience</div>
     <div className="experience__info">
-      For user one of the main views is task manager view that gives them
-      overview of the progress on construction site. This view has to be fit
-      teams from 2 - 30 people in size that makes data design extreamly hard.
-      One of things we dsicuvered during the pilots was that teams that always
-      have tasks in their backlog are more productive in overall. To be able to
-      main tain this we created a listview out of all the employees on that
-      project to give managers ability to balance workload.
+    During the early pilots we discovered that kanban type task
+    boards are good for getting an overview of the project status
+    but they don’t work well for making sure that workload is equally
+    balanced. Managing large teams can be quite challenging  in a workplace,
+    such as an entire apartment building where face-to-face interactions are
+    rare between the manager and the team. To satisfy both needs we had to
+    find better ways to present the data.
     </div>
     <Overview />
     <Resources />

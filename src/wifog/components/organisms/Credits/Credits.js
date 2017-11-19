@@ -13,12 +13,12 @@ import './style.css'
 const Credits = () => (
   <div className="credits wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="credits__info">
-      <div className="credits__info__title">Working with credits</div>
+      <div className="credits__info__title">Currency across the platform</div>
       <div className="credits__info__description">
-        When it comes rewarding users the tricky part is coming up with credit
-        model that could work across the platform. People do undestand the
-        concept of money but credit becomes more uncertain where it doesn’t have
-        a clear value.
+      Working with credits is much harder as it doesn’t have a certain
+      value for users like different currencies do. This makes it important
+      to be clear in communication and coherent in UI when it comes to actions
+      about earning and spending.
       </div>
     </div>
     <div className="credits__wrapper">

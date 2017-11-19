@@ -1,11 +1,12 @@
 @import 'colors.css';
 @import 'typography.css';
 
-.hello {
-  flex: 1;
+.browsing {
   display: flex;
+  flex: 1;
   flex-direction: column;
   width: 100%;
+  margin-right: 131px;
 
   &__info {
     display: flex;
@@ -15,10 +16,10 @@
       display: flex;
       align-items: center;
       width: 100%;
-      min-height: 54px;
+      min-height: 41px;
       font-size: 36px;
       font-family: var(--font-tisa-ot-lt);
-      margin-bottom: 8px;
+      margin-bottom: 7px;
 
       @media (max-width: 767px) {
         margin-left: 20px;
@@ -49,7 +50,7 @@
     &__link {
       display: flex;
       align-items: center;
-      width: 122px;
+      width: 66px;
       height: 20px;
       font-size: 14px;
       color: var(--color-black);
@@ -61,7 +62,7 @@
     }
   }
 
-  &__lunch {
+  &__wifog {
     width: 100%;
     margin-bottom: 40px;
 
@@ -72,5 +73,14 @@
     @media (max-width: 767px) {
       margin-bottom: 31px;
     }
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: 966px) {
+    margin-right: 30px;
   }
 }

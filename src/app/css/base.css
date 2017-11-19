@@ -20,6 +20,7 @@ body {
   font-family: var(--font-heebo-md);
   box-sizing: border-box;
 
+
 & *,
 & *::before,
 & *::after {
@@ -36,6 +37,7 @@ body {
 a {
   position: relative;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #app {
@@ -61,30 +63,35 @@ h1 {
   text-align: left;
 }
 
-a:after{
-  content: '';
-  position: absolute;
-  width: 0; height: 3px;
-  display: block;
-  margin-top: 3px;
-  right: 0;
-  background: #2A78C3;
-  transition: width .2s ease;
-  -webkit-transition: width .2s ease;
-}
+@media (pointer: fine) {
+    a:after{
+      content: '';
+      position: absolute;
+      width: 0; height: 3px;
+      display: block;
+      margin-top: 3px;
+      right: 0;
+      background: #2A78C3;
+      transition: width .2s ease;
+      -webkit-transition: width .2s ease;
+    }
 
-a:hover:after{
-  width: 100%;
-  left: 0;
-  background: #2A78C3;
-}
+    a:hover:after{
+      width: 100%;
+      left: 0;
+      background: #2A78C3;
+    }
 
-@-webkit-keyframes scaleBlock {
-  0%   {transform: scaleY(0.8)}
-  100% {transform: scaleY(1)}
-}
+    @-webkit-keyframes scaleBlock {
+      0%   {transform: scaleY(0.8)}
+      100% {transform: scaleY(1)}
+    }
 
-@keyframes scaleBlock {
-  0%   {transform: scaleY(0.8)}
-  100% {transform: scaleY(1)}
+    @keyframes scaleBlock {
+      0%   {transform: scaleY(0.8)}
+      100% {transform: scaleY(1)}
+    }
+
+
+
 }

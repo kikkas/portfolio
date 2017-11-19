@@ -24,30 +24,30 @@ export default class Intro extends Component {
     return (
       <div className="wifog-intro">
         <div className="wifog-intro__header">
-          Intro
+        Background
         </div>
         <div className="wifog-intro__description">
-        There is many ways nowadays how you can earn money online.
-        On the other hand there is no good education about how to
-        use internet smart way. Wifog is about to connect those two
-        on a smart way.  Aim for the Wifog was to build a service
-        that servs users online.
+        The Internet is full of ways how to earn money just by doing small
+        micro tasks like filling in surveys or testing mobile apps. Wifog
+        is a platform that gathers together all similar services and helps
+        users to become smarter internet consumers.
         </div>
         <div className="wifog-intro__header">
-          The challange
+        The challenge
         </div>
         <div className="wifog-intro__description">
-        At the start of the project we know some ways how people will
-        collect credits but product had to be scaleable enought to
-        faciliate all kind a activities in the future. It made extreamly
-        challenging to design interface for an undefined content.
+        Micro tasks change constantly and products must be able to adapt
+        those changes. This makes it challenging to come up with an interface
+        design that could accommodate all potential ways of browsing and completing
+        micro tasks.
         </div>
         <div className="wifog-intro__header">
           Process
         </div>
         <div className="wifog-intro__description">
-        We broke down credit collection in to pieaces and defined a differnt
-        stages that would be repeated in every content type.
+        To find a good interface solution we looked at every interaction with a
+        micro task as a separate stage. This made it easier to specify the elements
+        in interface that would help to convert the user into the next stage. 
         </div>
         <div className="wrapper-process">
             <div className="design-process">

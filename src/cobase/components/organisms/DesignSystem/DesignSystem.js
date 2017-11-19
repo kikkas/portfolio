@@ -14,12 +14,14 @@ const DesignSystem = () => (
   <div className="design-system wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="design-system__info">
       <div className="design-system__info__header">
-        Building a design system for buildings
+      Design system
       </div>
       <div className="design-system__info__content">
-        Cobase project is following the basic principles of atomic design that
-        also goes along with modern front end frameworks philosophy. Original
-        credit for this goes to Brad Frost!
+      Constant iterations and design changes are quite common on
+      projects like this, therefore there was a need for scalable
+      design system. Atomic design principles seemed to be the best
+      fit for the task with few modifications. Credit for the original
+      solution goes to Brad Frost.
       </div>
     </div>
     <DesignAtoms />

@@ -12,6 +12,11 @@
   height: 304px;
   background-color: var(--color-white);
   padding: 48px 21px 0 40px;
+  box-shadow: 1px 1px 20px 7px rgba(0, 0, 0, 0.08);
+  @media (max-width: 767px) {
+    box-shadow: none;
+  }
+
 
   &__project {
     display: flex;

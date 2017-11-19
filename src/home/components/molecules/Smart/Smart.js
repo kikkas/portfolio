@@ -7,30 +7,24 @@
 import { h, Component } from 'preact'
 import { Link } from 'preact-router/match'
 
-import videoUrl from 'assets/video/cobase-cover-video-2.mp4'
+import imgUrl from 'assets/img/wifog-cms@2x.png'
 
 import './style.css'
 
 const Smart = () => (
   <div className="smart wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="smart__info" >
-      <div className="smart__info__header">Consume smart on internet</div>
+      <div className="smart__info__header">Wifog rewards </div>
       <div className="smart__info__content">
-        How to make people convert their time into value while browsing
-        internet?
+        Wifog is a reward platform where users get paid in exchange for solving small tasks.
       </div>
-      <Link href="/cobase" className="smart__info__link">
-        Find out here
+      <Link href="/wifog" className="smart__info__link">
+        See it here
       </Link>
     </div>
     <div className="smart__video-block">
-      <Link href="/cobase" className="smart__link">
-        <video
-          src={videoUrl}
-          className="assistant__video-block__video"
-          autoPlay
-          loop
-        />
+      <Link href="/wifog" className="smart__link">
+        <img className="assistant__video-block__video" src={imgUrl} />
       </Link>
     </div>
   </div>

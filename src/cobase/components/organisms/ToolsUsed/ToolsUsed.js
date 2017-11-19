@@ -20,7 +20,7 @@ const ToolsUsed = () => (
         Principle
       </div>
       <div href="#" className="tools-used__list__elem">
-        Framer
+        Marvel
       </div>
       <div href="#" className="tools-used__list__elem">
         Zeplin

@@ -1,6 +1,6 @@
 /*
  *
- * SayHello
+ * Lunch
  *
  */
 
@@ -12,7 +12,7 @@ import lunchSmImgUrl from 'assets/img/lunch-app-sm@2x.png'
 
 import './style.css'
 
-export default class SayHello extends Component {
+export default class Lunch extends Component {
   state = {
     windowWidth: window.innerWidth,
   }
@@ -41,13 +41,13 @@ export default class SayHello extends Component {
         </div>
         <div className="hello__info">
           <div className="hello__info__header">
-            Say hello to lunch assistant
+          Lunch assistant
           </div>
           <div className="hello__info__content">
-            What it there is an app to make you lunches more fullfilling?
+          Design for an AI based chatbot to make lunch experience more fulfilling and spontaneous.
           </div>
-          <Link href="#" className="hello__info__link">
-            See how this works
+          <Link href="/lunch" className="hello__info__link">
+            See it here
           </Link>
         </div>
       </div>

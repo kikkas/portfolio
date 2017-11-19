@@ -15,7 +15,7 @@ import './style.css'
 const Reshaping = () => (
   <div className="cobase-reshaping wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="cobase-reshaping__header">
-      Reshaping hardest heavyiest industries of them all
+        Industry and the background
     </div>
     <div className="cobase-reshaping__content">
       <Construction />

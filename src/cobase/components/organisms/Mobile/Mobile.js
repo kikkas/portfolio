@@ -12,17 +12,13 @@ import './style.css'
 
 const CreatingOnMobile = () => (
   <div className="mobile wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div className="mobile__header">Creating issues fast on mobile</div>
+    <div className="mobile__header">Quick issue reporting on mobile</div>
     <div className="mobile__content">
-      It is easy to cluster UI with a lot of unneccessary things when it comes
-      to documenting issues. Due the reason Cobase is often used on construction
-      site that is surrounded by noise dust and danger you want documenting
-      issues to be lighting fast. On the other hand sometimes there is need for
-      very detailed information. We solved this by two steps issue creation.
-      First step creates issue and assigns this to certain user (that covers
-      about the 80% of the issues needs) and second step helps to provide more
-      information. This way everything gets always added to system as the
-      barrier is super low.
+    Construction workers spend the majority of their time in quite hectic
+    environment and poor conditions on construction sites. This means that
+    reporting issues must be fast, simple and reliable. We split the process
+    into two parts: the first step that covers the basic information and assigns
+    the task to a certain user, and on the second step user adds more specific details.
     </div>
     <MobileGraphik />
   </div>

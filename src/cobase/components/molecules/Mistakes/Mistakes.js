@@ -17,14 +17,14 @@ const Mistakes = () => (
     </div>
     <div className="mistakes__info">
       <div className="mistakes__info__header">
-        Acurate information, less mistakes
+      Accurate information, less mistakes
       </div>
       <div className="mistakes__info__content">
-        Mistakes on construction site ofen happen because not detailed enough
-        description of the issue or task. To avoid this kind a mistakes we
-        developed a system were all tasks are aslo connected with certain point
-        on costruction blueprint. This way you can always be sure that the
-        location is given as accurately as possible.
+      When analyzing  construction mistakes we realized that there
+      is a correlation between the low accuracy of information and
+      the high number of mistakes. To avoid them we developed an
+      issue reporting system that includes things like location on
+      blueprint, detailed description and photos.
       </div>
     </div>
   </div>

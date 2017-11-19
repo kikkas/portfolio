@@ -50,7 +50,7 @@
     &__link {
       display: flex;
       align-items: center;
-      width: 85px;
+      width: 66px;
       height: 20px;
       font-size: 14px;
       color: var(--color-black);
@@ -62,7 +62,7 @@
     }
   }
 
-  &__wifog {
+  &__cobase {
     width: 100%;
     margin-bottom: 40px;
 

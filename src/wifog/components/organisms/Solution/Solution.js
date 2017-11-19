@@ -13,11 +13,12 @@ import './style.css'
 const Solution = () => (
   <div className="solution wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="solution__info">
-      <div className="solution__info__title">Solution</div>
+      <div className="solution__info__title">Swipeable cards</div>
       <div className="solution__info__description">
-        In order to faciliatet this kind a content we use swipeable card models.
-        Based on user interactions we can decide what card to show and what not.
-        It coulbe be easier to predict what to show next and what not.
+      It seemed most viable to present every task as a separate card where the user
+      can make a decision to solve the task or skip it for that moment. On the card
+      there is an estimated time of how long it takes to complete the task and the
+      amount of credits you will receive as a reward.
       </div>
     </div>
     <div className="solution__wrapper">

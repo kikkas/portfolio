@@ -34,9 +34,9 @@ export default class Building extends Component {
         ) : (
           ''
         )}
-        <div className="building__caption">Building a building 2.0</div>
+        <div className="building__caption">Building 2.0</div>
         <div className="building__info">
-          Design of a platform that brings construction into today.
+        Construction site productivity tool where managers can have control over tasks and workforce.
         </div>
         <Link href="/cobase" className="building__link">
           See it here

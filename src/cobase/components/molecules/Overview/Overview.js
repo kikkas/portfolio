@@ -13,11 +13,11 @@ import './style.css'
 const Overview = () => (
   <div className="overview wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
     <div className="overview__info">
-      <div className="overview__info__header">Good overview</div>
+      <div className="overview__info__header">Overview</div>
       <div className="overview__info__content">
-        For user one of the main views is task manager view that gives them
-        overview of the progress on construction site. This view has to be fit
-        teams from 2 - 30 people in size that makes data design extreamly hard.
+      This view helps project managers to make sure that work is going
+      according to plan and the tasks are on time. The main focus is
+      on issues and their status.
       </div>
     </div>
     <div className="overview__image-block">
