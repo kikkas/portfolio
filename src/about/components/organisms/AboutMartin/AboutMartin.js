@@ -37,7 +37,7 @@
                 <br />
                 <br />
                 Have a challenge for me?<br />
-                Find me on <a href="www.linkedin.com" className="information">Linkedin</a> or write to me <a className="information" href="mailto:martinkikkas@hotmail.com">hi@kikkas.co</a>
+                Find me on <a href="https://www.linkedin.com/in/martin-kikkas-56bb0023/" className="information">Linkedin</a> or write to me <a className="information" href="mailto:martinkikkas@hotmail.com">email</a>
                 </div>
             </div>
         </div>

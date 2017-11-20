@@ -15,9 +15,9 @@ const Footer = () => (
       Email me
     </Link>
     <div className="cobase-footer__content">
-      <Link href="#" className="cobase-footer__content__col">
+      <a href="https://medium.com/" className="cobase-footer__content__col">
         Medium
-      </Link>
+      </a>
       <Link href="#" className="cobase-footer__content__col">
         Dribbble
       </Link>

@@ -72,7 +72,7 @@ h1 {
       display: block;
       margin-top: 3px;
       right: 0;
-      background: #2A78C3;
+      background: #d7dce0;
       transition: width .2s ease;
       -webkit-transition: width .2s ease;
     }
@@ -80,7 +80,7 @@ h1 {
     a:hover:after{
       width: 100%;
       left: 0;
-      background: #2A78C3;
+      background: #d7dce0;
     }
 
     @-webkit-keyframes scaleBlock {

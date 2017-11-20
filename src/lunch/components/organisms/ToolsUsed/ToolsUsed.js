@@ -19,12 +19,6 @@ const ToolsUsed = () => (
       <div href="#" className="tools-used__list__elem">
         Principle
       </div>
-      <div href="#" className="tools-used__list__elem">
-        Framer
-      </div>
-      <div href="#" className="tools-used__list__elem">
-        Zeplin
-      </div>
     </div>
   </div>
 )

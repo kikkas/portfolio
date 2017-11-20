@@ -11,19 +11,19 @@ import './style.css'
 
 const Footer = () => (
   <div className="footer wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-    <Link href="#" className="footer__email">
+    <a href="mailto:martinkikkas@hotmail.com" className="footer__email">
       Email me
-    </Link>
+    </a>
     <div className="footer__content">
-      <Link href="#" className="footer__content__col">
+      <a href="https://medium.com/@kickasss" className="footer__content__col">
         Medium
-      </Link>
-      <Link href="#" className="footer__content__col">
+      </a>
+      <a href="https://dribbble.com/martinkikkas" className="footer__content__col">
         Dribbble
-      </Link>
-      <Link href="#" className="footer__content__col">
+      </a>
+      <a href="https://www.linkedin.com/in/martin-kikkas-56bb0023/" className="footer__content__col">
         Linkedin
-      </Link>
+      </a>
     </div>
   </div>
 )

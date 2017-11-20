@@ -19,7 +19,7 @@ import Experience from '@/lunch/components/organisms/Experience'
 import DesignSystem from '@/lunch/components/organisms/DesignSystem'
 import ToolsUsed from '@/lunch/components/organisms/ToolsUsed'
 import OtherProjects from '@/lunch/components/organisms/OtherProjects'
-import Footer from '@/lunch/components/organisms/Footer'
+import Footer from '@/shared/components/Footer'
 
 import './style.css'
 

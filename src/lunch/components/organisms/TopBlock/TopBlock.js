@@ -11,9 +11,10 @@ import './style.css'
 const TopBlock = () => (
   <div className="lunch-top-block">
     <div className="lunch-top-block__header">
-      Lunchbot - better lunch experience
+    Lunch assistant
     </div>
-    <div className="lunch-top-block__platform">AI that makes your lunches meaningful</div>
+    <div className="lunch-top-block__platform">AI based chatbot to make lunch experience more fulfilling and spontaneous.
+  </div>
   </div>
 )
 

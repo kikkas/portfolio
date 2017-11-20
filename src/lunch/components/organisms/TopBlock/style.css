@@ -23,6 +23,7 @@
       font-size: 26px;
       height: 38px;
       margin-left: 16px;
+      margin-bottom: 24px;
     }
   }
 
@@ -35,6 +36,7 @@
     font-family: var(--font-tisa-ot-lt);
     color: var(--color-gray-light);
     margin-left: 80px;
+    margin-bottom: 24px;
 
     @media (max-width: 767px) {
       font-size: 26px;

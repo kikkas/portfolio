@@ -19,7 +19,7 @@ export default class Animation extends Component {
         return (
             <div className="page-loading">
                 {!wasAnimated ? <div className="animation" onAnimationEnd={this.animationEndHandler} >
-                    <p className="animation__text">I am getting ready</p>
+                    <p className="animation__text">Site is getting ready</p>
                     <div className="animation__bg"></div>
                 </div> : null}
             </div>

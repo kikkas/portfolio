@@ -7,8 +7,8 @@
 import { h, Component } from 'preact'
 import { Link } from 'preact-router/match'
 
-import lunchImgUrl from 'assets/img/lunch-app@2x.png'
-import lunchSmImgUrl from 'assets/img/lunch-app-sm@2x.png'
+import lunchImgUrl from 'assets/img/lunch-cover-image.png'
+import lunchSmImgUrl from 'assets/img/lunch-cover-image-sm.png'
 
 import './style.css'
 

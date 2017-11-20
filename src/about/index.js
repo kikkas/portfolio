@@ -12,6 +12,7 @@ import 'animate.css/animate.min.css'
 import WOW from 'wowjs';
 
 import Navbar from '@/shared/components/Navbar'
+import Footer from '@/shared/components/Footer'
 import AboutMartin from '@/about/components/organisms/AboutMartin'
 
 import './style.css'
@@ -25,7 +26,7 @@ export default class About extends Component {
             live: false
         }).init();
     }
-    
+
   render() {
     return (
       <div className="about-page">
@@ -33,6 +34,7 @@ export default class About extends Component {
 
         <Navbar title="Back to homepage" link="/" />
         <AboutMartin />
+        <Footer />
       </div>
     )
   }

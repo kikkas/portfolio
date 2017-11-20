@@ -6,9 +6,14 @@
 
 import { h, Component } from 'preact'
 
-import imageUrl from 'assets/img/lunch-test-image.png'
+import imageUrl1 from 'assets/img/lunch-1.png'
+import imageUrl2 from 'assets/img/lunch-2.png'
+import imageUrl3 from 'assets/img/lunch-3.png'
+import imageUrl4 from 'assets/img/lunch-4.png'
 import Construction from '@/lunch/components/molecules/Construction'
 import Mistakes from '@/lunch/components/molecules/Mistakes'
+import { Link } from 'preact-router/match'
+
 
 import './style.css'
 
@@ -18,105 +23,103 @@ const Reshaping = () => (
       Background & Initial thoughts
     </div>
     <div className="lunch-content__content">
-      This project started as a client project where
-      to goal was to redesign exiting application that
-      was filling a dashboard purpose for employer lunch
-      card. As the wish was to incorporate a lot more
-      than just keeping it a dashboard app, I started
-      exploring what options there are to make intiutive
-      interface for such a product.
-
-      I started mapping out the whole lunch experience
-      what people go through every day and see how many
-     touchpoints an application served for that purpose can have.
-    </div>
-    <div className="lunch-content__media">
-      <img className="lunch-content__image" src={imageUrl} />
+      This project started out as a redesign for an existing
+      application that was meant for users to  managing their
+      prepaid lunch cards. Applications like this are very practical
+      but doesn’t provide any extra value for its users rather than
+      just getting to know their card balance. And this makes it less
+      likely that users will spend their phone precious screen space
+      to keep it. Client wish was to help users to improve their
+      overall lunch experience: recommend good places where to eat,
+      provide relevant content to learn from and help people make new
+      connections. These are quite different things in their nature
+      and could be separate apps of their own so I started to explore
+      what could be the best ways create an intuitive interface for it.
     </div>
     <div className="lunch-content__header">
-      Touchpoints
+        Touchpoints
     </div>
     <div className="lunch-content__content">
-      After going throug multiple people lunch experience and
-      analyzing it a bit it came clear that there are three
-      main things that people struggle and could be better.
-      Those are origination (where to go to eat?), company/experience
-      (how can I make something differntly than yesterday?),
-      knowledge (what I need to eat to be healthy).
+    In order to find an answer to the question how does a good lunch
+    experience look like I conducted a few interviews. After going
+    through multiple people’s lunch routines it came clear that there
+    are three things that people struggle with and could be solved with technology.
+    The problems that came up were the following.  How to find new interesting
+    places where to eat?  How to be more social during a lunch so it becomes more
+    than just eating? How to make my lunch routine healthier?
     </div>
     <div className="lunch-content__media">
-      <img className="lunch-content__image" src={imageUrl} />
+      <img className="lunch-content__image" src={imageUrl1} />
     </div>
     <div className="lunch-content__header">
-      The bot exprience
+        Chatbots and AI
     </div>
     <div className="lunch-content__content">
-      These type of experiences can feel good only when it is
-      reallly built around user needs and has always something
-      fresh to offer. One way how this could be approcahed is
-      by seeing it as lunch assistant that takes care of your
-      needs and makes sure you are having a great time. If we
-      bring that to digital world then closest you can get is
-      super smart chatbot that does all this.
+    All the explored touchpoints seemed one thing in common: in
+    order to provide information or recommendations to user we need
+    first ask their input. It is hard to suggest some specific place
+    where to eat without knowing nothing about user preferences.
+    Another thing that came clear was that user needs change quite often
+    because of different factors like workload or current feeling.
+    This means that we can not store user preferences persistently but
+    have to ask it over again. For this purpose chatbots seemed like a
+    good fit: we can ask user input and make suggestion based on that.
+    What is even better is that with current machine learning techniques
+    we can actually make suggestions much better over time.
     </div>
     <div className="lunch-content__media">
-      <img className="lunch-content__image" src={imageUrl} />
+      <img className="lunch-content__image" src={imageUrl2} />
     </div>
     <div className="lunch-content__header">
-      The bot exprience #2
+        Discovering new places
     </div>
     <div className="lunch-content__content">
-      These type of experiences can feel good only when it is
-      reallly built around user needs and has always something
-      fresh to offer. One way how this could be approcahed is
-      by seeing it as lunch assistant that takes care of your
-      needs and makes sure you are having a great time. If we
-      bring that to digital world then closest you can get is
-      super smart chatbot that does all this.
+      Lets look at the use case where user wants recommendations for new
+      places where to eat and how it could be solved with a chatbot.
+      As mentioned before  we need to ask some basic user preferences.
+      Type of food, distance and price range could be good for the start.
+      Based on initial choices some options will be presented back to user.
+      To make suggestions better over a time the actual purchase data could
+      be used to analyze what places user visited out of recommendations.
+      Also, simple feedback could be asked about restaurant after having
+      lunch there.
     </div>
     <div className="lunch-content__media">
-      <img className="lunch-content__image" src={imageUrl} />
+      <img className="lunch-content__image" src={imageUrl3} />
     </div>
     <div className="lunch-content__header">
-      How the AI works
+        Educational content
     </div>
     <div className="lunch-content__content">
-      So, what do we actually need to build an AI that is able
-      to tell me whom I should go having lunch with and what
-      should be on my plate today to keep my muscles happy?
-      First, lets look the input data, in order to make
-      predictions about where should I go to eat.
-      There is tons of services that have listed all food
-      places in every modern city I belive like Foursquare,
-      Yelp Tripadvisor naming few. Plus food delivery services
-      like Foodora, Uber Eats or Wolt that make possible get
-      delivery from any foodplace. AI works that there is input and output.
-      But what could be potential inputs that user enters?
-      Type of food, price, location.(radius)
+    Similar  solution could also work for recommending educational
+    content for users about healthy lunch routine. Over here we can
+    assume preferences are more consistent  and not changing that often.
+    Challenge is to find a good timing when to serve content and find
+    engaging format for this. One of the solutions could be using
+    interactive stories that user can browse. It is one of the fastest
+    and most engaging way to introduce different topics and has become
+    really popular recently.
     </div>
     <div className="lunch-content__media">
-      <img className="lunch-content__image" src={imageUrl} />
+      <img className="lunch-content__image" src={imageUrl4} />
     </div>
     <div className="lunch-content__header">
-      For the conclusion
+        Summary & learnings
     </div>
     <div className="lunch-content__content">
-    For the conclusion I would like to say that world doesn’t
-    really need another application that recommends you something,
-    neither it needs an application that says it does something
-    based on AI. The thing is that it isn’t about the technolgies
-    anymore, rather experiences we can create of them. Somehow it
-    has become an natural expectation of users that the apps know
-    what they need and are able to find it much faster than humans
-    can - we just assume it is there. I like the thought by Frank
-    Chen who is partner at Andreessen Horowitz  what hi thinks about
-    AI in future startups. And investors will stop looking for AI-powered
-    startups in exactly the same way they don’t look for database-inside
-    or cloud-native or mobile-first startups anymore. All those things
-    are just assumed.
-    </div>
-    <div className="lunch-content__media">
-      <img className="lunch-content__image" src={imageUrl} />
+    I believe that the world really doesn’t need another chatbot that will
+    recommend you something but in some occasions it might be better experience
+    than application with endless scrollable feeds and setting bars. If the
+    product is easy and engaging to use this might create the stickiness for a
+    product and bring user back next time when he or she wonders where to go eat
+    today. Machine learning could help out making suggestions more relevant over a
+    time while still keeping the product rather simple from user perspective. It
+    somehow has become a new standard that we expect from product nowadays.
+    I like the thought by Frank Chen who is a partner at Andreessen Horowitz,
+    what he thinks about AI in future products: “And investors will stop looking
+    for AI-powered startups in exactly the same way they don’t look for database-inside
+    or cloud-native or mobile-first startups anymore. All those things are just assumed.” 
+    <span><a className="information" href="https://machinelearnings.co/in-a-few-years-no-investors-are-going-to-be-looking-for-ai-startups-90274c91f5c9">Read Medium article</a></span>
     </div>
   </div>
 )

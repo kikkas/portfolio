@@ -7,7 +7,7 @@
 import { h, Component } from 'preact'
 import { Link } from 'preact-router/match'
 
-import imgUrl from 'assets/img/wifog-cms@2x.png'
+import imgUrl from 'assets/img/lunch-cover-image.png'
 
 import './style.css'
 
