@@ -15,7 +15,7 @@ const Overview = () => (
     <div className="overview__info">
       <div className="overview__info__header">Overview</div>
       <div className="overview__info__content">
-      This view helps project managers to make sure that work is going
+      This view helps project managers to make sure that the work is going
       according to plan and the tasks are on time. The main focus is
       on issues and their status.
       </div>

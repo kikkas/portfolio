@@ -36,7 +36,7 @@ export default class Building extends Component {
         )}
         <div className="building__caption">Building 2.0</div>
         <div className="building__info">
-        Construction site productivity tool where managers can have control over tasks and workforce.
+        Construction site productivity tool where managers can have control over the tasks and workforce.
         </div>
         <Link href="/cobase" className="building__link">
           See it here

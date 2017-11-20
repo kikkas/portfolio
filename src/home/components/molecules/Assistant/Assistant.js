@@ -18,7 +18,7 @@ const Assistant = () => (
         Lunch assistant
       </div>
       <div className="assistant__info__content">
-      Design for an AI based chatbot to make lunch experience more fulfilling and spontaneous.
+      Design for an AI based chatbot to make the lunch experience more fulfilling and spontaneous.
       </div>
       <Link href="/lunch" className="assistant__info__link">
         See it here

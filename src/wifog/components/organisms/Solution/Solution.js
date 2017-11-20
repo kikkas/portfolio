@@ -16,7 +16,7 @@ const Solution = () => (
       <div className="solution__info__title">Swipeable cards</div>
       <div className="solution__info__description">
       It seemed most viable to present every task as a separate card where the user
-      can make a decision to solve the task or skip it for that moment. On the card
+      can make a decision to solve the task or to skip it for that moment. On the card
       there is an estimated time of how long it takes to complete the task and the
       amount of credits you will receive as a reward.
       </div>

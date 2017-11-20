@@ -36,7 +36,7 @@ export default class Intro extends Component {
         The challenge
         </div>
         <div className="wifog-intro__description">
-        Micro tasks change constantly and products must be able to adapt
+        Micro tasks change constantly and products must be able to adapt to
         those changes. This makes it challenging to come up with an interface
         design that could accommodate all potential ways of browsing and completing
         micro tasks.
@@ -47,7 +47,7 @@ export default class Intro extends Component {
         <div className="wifog-intro__description">
         To find a good interface solution we looked at every interaction with a
         micro task as a separate stage. This made it easier to specify the elements
-        in interface that would help to convert the user into the next stage. 
+        in interface that would help to convert the user into the next stage.
         </div>
         <div className="wrapper-process">
             <div className="design-process">
