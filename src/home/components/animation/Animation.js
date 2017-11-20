@@ -22,7 +22,6 @@ export default class Animation extends Component {
                     <p className="animation__text">I am getting ready</p>
                     <div className="animation__bg"></div>
                 </div> : null}
-                {this.props.children}
             </div>
         )
     }
