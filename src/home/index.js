@@ -55,19 +55,21 @@ export default class Home extends Component {
     render() {
         const {wasAnimated} = this.props;
         return (
-            <Animation onAnimationEnd={this.animationCallBack} wasAnimated={wasAnimated}>
-                <div className="home-page">
-                    <Helmet title="Martin Kikkas"/>
-                    <Navbar title="About" link="/about"/>
-                    <Content>
-                        <Caption />
-                        <CobaseFeatured />
-                        <LatestWork />
-                        <Thoughts />
-                    </Content>
-                    <Footer />
-                </div>
-            </Animation>
+            <div>
+                <Animation onAnimationEnd={this.animationCallBack} wasAnimated={wasAnimated} />
+                    <div className="home-page">
+                        <Helmet title="Martin Kikkas"/>
+                        <Navbar title="About" link="/about"/>
+                        <Content>
+                            <Caption />
+                            <CobaseFeatured />
+                            <LatestWork />
+                            <Thoughts />
+                        </Content>
+                        <Footer />
+                    </div>
+            </div>
+            
         )
     }
 }
